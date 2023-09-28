@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Safari Tours Guide</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/turaco.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Quicksand:wght@600;700&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-light p-0 wow fadeIn" data-wow-delay="0.1s">
+        <div class="row gx-0 d-none d-lg-flex">
+            <div class="col-lg-7 px-5 text-start">
+                <div class="h-100 d-inline-flex align-items-center py-3 me-4">
+                    <small class="fa fa-map-marker-alt text-primary me-2"></small>
+                    <small>123 Street, Nairobi, Kenya</small>
+                </div>
+                <div class="h-100 d-inline-flex align-items-center py-3">
+                    <small class="far fa-clock text-primary me-2"></small>
+                    <small>Mon - Fri : 09.00 AM - 09.00 PM</small>
+                </div>
+            </div>
+            <div class="col-lg-5 px-5 text-end">
+                <div class="h-100 d-inline-flex align-items-center py-3 me-4">
+                    <small class="fa fa-phone-alt text-primary me-2"></small>
+                    <small>+254 345 6789</small>
+                </div>
+                <div class="h-100 d-inline-flex align-items-center">
+                    <a class="btn btn-sm-square bg-white text-primary me-1" href=""><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-sm-square bg-white text-primary me-1" href=""><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-sm-square bg-white text-primary me-1" href=""><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-sm-square bg-white text-primary me-0" href=""><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top py-lg-0 px-4 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
+        <a href="index.html" class="navbar-brand p-0">
+            <img class="img-fluid me-3" src="img/turaco.ico" alt="Icon">
+            <h1 class="m-0 text-primary">Safari Tours Guide</h1>
+        </a>
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse py-4 py-lg-0" id="navbarCollapse">
+            <div class="navbar-nav ms-auto">
+                <a href="index.html" class="nav-item nav-link">Home</a>
+                <a href="about.html" class="nav-item nav-link">About</a>
+                <a href="service.html" class="nav-item nav-link">Services</a>
+                <a href="package.html" class="nav-item nav-link active">Packages</a>
+                <a href="gallery.html" class="nav-item nav-link">Gallery</a>
+                <a href="contact.html" class="nav-item nav-link">Contact</a>
+            </div>
+            <!-- <a href="" class="btn btn-primary">Buy Ticket<i class="fa fa-arrow-right ms-3"></i></a> -->
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Page Header Start -->
+    <div class="container-fluid header-bg py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <h1 class="display-4 text-white mb-3 animated slideInDown">Packages</h1>
+            <nav aria-label="breadcrumb animated slideInDown">
+                <ol class="breadcrumb mb-0">
+                    <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li>
+                    <li class="breadcrumb-item text-primary active" aria-current="page">Packages</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <!-- Page Header End -->
+
+
+    <!-- Membership Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5 mb-5 align-items-end wow fadeInUp" data-wow-delay="0.1s">
+                <div class="col-lg-6">
+                    <p><span class="text-primary me-2">#</span>Packages</p>
+                    <h1 class="display-5 mb-0">You Can Check Out Our Packages At<span class="text-primary"> Safari Tours</span></h1>
+                </div>
+                <div class="col-lg-6 text-lg-end">
+                    <a class="btn btn-primary py-3 px-5" href="">Make Your Plan Package</a>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="membership-item position-relative">
+                        <img class="img-fluid" src="img/animal-lg-1.jpg" alt="">
+                        <h1 class="display-1">8 Days</h1>
+                        <h4 class="text-primary mb-3">Lion's Pride Adventure</h4>
+                        <h3 class="text-white mb-4">From $400.00</h3>
+                        <h4 class="text-primary mb-3">Guide Tour:</h4>
+                        <p><i class="fa fa-check text-primary me-3"></i>Pick-Up from Airport</p>
+                        <p><i class="fa fa-check text-primary me-3"></i>Maasai Mara National Reserve (3 Days)</p>
+                        <p><i class="fa fa-check text-primary me-3"></i>Amboseli National Park (2 Days)</p>
+                        <p><i class="fa fa-check text-primary me-3"></i>Lake Nakuru National Park (1 Day)</p>
+                        <p><i class="fa fa-check text-primary me-3"></i>Nairobi National Park (1 Day)</p>
+                        <p><i class="fa fa-check text-primary me-3"></i>Drop at Airport</p>
+                        <h4 class="text-primary mb-3">Tailor-made Details:</h4>
+                        <p><i class="fa fa-check text-primary me-3"></i>Optional hot air balloon safari over Maasai Mara at sunrise</p>
+                        <p><i class="fa fa-check text-primary me-3"></i>Guided tour by Maasai warriors in Maasai Mara</p>
+                        <h4 class="text-primary mb-3">Recreational Activity:</h4>
+                        <p><i class="fa fa-check text-primary me-3"></i>Boat Ride on Lake Nakuru</p>
+                        <p><i class="fa fa-check text-primary me-3"></i>Swimming at Hot Springs</p>
+                        <a class="btn btn-outline-light px-4 mt-3" href="">Get Started</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="membership-item position-relative">
+                        <img class="img-fluid" src="img/animal-lg-2.jpg" alt="">
+                        <h1 class="display-1">10 Days</h1>
+                        <h4 class="text-primary mb-3">Elephant Expedition</h4>
+                        <h3 class="text-white mb-4">From $329.00</h3>
+                        <h4 class="text-primary mb-3">Guide Tour:</h4>
+                        <p><i class="fa fa-check text-primary me-3"></i>Pick-Up from Airport</p>
+                        <p><i class="fa fa-check text-primary me-3"></i>Samburu National Reserve (3 Days)</p>
+                        <p><i class="fa fa-check text-primary me-3"></i>Aberdare National Park (2 Days)</p>
+                        <p><i class="fa fa-check text-primary me-3"></i>Ol Pejeta Conservancy (2 Days)</p>
+                        <p><i class="fa fa-check text-primary me-3"></i>Mount Kenya National Park (1 Day)</p>
+                        <p><i class="fa fa-check text-primary me-3"></i>Drop at Airport</p>
+                        <h4 class="text-primary mb-3">Tailor-made Details:</h4>
+                        <p><i class="fa fa-check text-primary me-3"></i>Guided walk through the Aberdare forest canopy</p>
+                        <p><i class="fa fa-check text-primary me-3"></i>Visit to Sweet waters Chimpanzee Sanctuary</p>
+                        <h4 class="text-primary mb-3">Recreational Activity:</h4>
+                        <p><i class="fa fa-check text-primary me-3"></i>Boat Ride on Lake Nakuru</p>
+                        <p><i class="fa fa-check text-primary me-3"></i>Equator Crossing StopOver</p>
+                        <a class="btn btn-outline-light px-4 mt-3" href="">Get Started</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="membership-item position-relative">
+                        <img class="img-fluid" src="img/animal-lg-3.jpg" alt="">
+                        <h1 class="display-1">12 Days</h1>
+                        <h4 class="text-primary mb-3">Rhino Retreat</h4>
+                        <h3 class="text-white mb-4">From $419.00</h3>
+                        <h4 class="text-primary mb-3">Guide Tour:</h4>
+                        <p><i class="fa fa-check text-primary me-3"></i>Pick-Up from Airport</p>
+                        <p><i class="fa fa-check text-primary me-3"></i>Lewa Wildlife Conservancy (3 Days)</p>
+                        <p><i class="fa fa-check text-primary me-3"></i>Meru National Park (3 Days)</p>
+                        <p><i class="fa fa-check text-primary me-3"></i>Tsavo East National Park (2 Days)</p>
+                        <p><i class="fa fa-check text-primary me-3"></i>Tsavo West National Park (2 Days)</p>
+                        <p><i class="fa fa-check text-primary me-3"></i>Drop at Airport</p>
+                        <h4 class="text-primary mb-3">Tailor-made Details:</h4>
+                        <p><i class="fa fa-check text-primary me-3"></i>Rhino tracking experience at Lewa</p>
+                        <p><i class="fa fa-check text-primary me-3"></i>Guided tour of Joy Adamson's Elsa's Kopje in Meru</p>
+                        <h4 class="text-primary mb-3">Recreational Activity:</h4>
+                        <p><i class="fa fa-check text-primary me-3"></i>Sunset Viewing</p>
+                        <p><i class="fa fa-check text-primary me-3"></i>Mzima Springs StopOver</p>
+                        <a class="btn btn-outline-light px-4 mt-3" href="">Get Started</a>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="membership-item position-relative">
+                        <img class="img-fluid" src="img/animal-lg-1.jpg" alt="">
+                        <h1 class="display-1">11 Days</h1>
+                        <h4 class="text-primary mb-3">Leopard's Lair</h4>
+                        <h3 class="text-white mb-4">From $399.00</h3>
+                        <h4 class="text-primary mb-3">Guide Tour:</h4>
+                        <p><i class="fa fa-check text-primary me-3"></i>Pick-Up from Airport</p>
+                        <p><i class="fa fa-check text-primary me-3"></i>Samburu National Reserve (3 Days)</p>
+                        <p><i class="fa fa-check text-primary me-3"></i>Nairobi National Park (1 Day)</p>
+                        <p><i class="fa fa-check text-primary me-3"></i>Lake Nakuru National Park (2 Days)</p>
+                        <p><i class="fa fa-check text-primary me-3"></i>Maasai Mara National Reserve (3 Days)</p>
+                        <p><i class="fa fa-check text-primary me-3"></i>Drop at Airport</p>
+                        <h4 class="text-primary mb-3">Tailor-made Details:</h4>
+                        <p><i class="fa fa-check text-primary me-3"></i>Guided nature walk with Samburu tribesmen</p>
+                        <p><i class="fa fa-check text-primary me-3"></i>Optional hot air balloon safari over Maasai Mara at sunrise</p>
+                        <h4 class="text-primary mb-3">Recreational Activity:</h4>
+                        <p><i class="fa fa-check text-primary me-3"></i>Boat Ride on Lake Nakuru</p>
+                        <p><i class="fa fa-check text-primary me-3"></i>Swimming at Hot Springs</p>
+                        <a class="btn btn-outline-light px-4 mt-3" href="">Get Started</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="membership-item position-relative">
+                        <img class="img-fluid" src="img/animal-lg-2.jpg" alt="">
+                        <h1 class="display-1">14 Days</h1>
+                        <h4 class="text-primary mb-3">Buffalo's Domain</h4>
+                        <h3 class="text-white mb-4">From $599.00</h3>
+                        <h4 class="text-primary mb-3">Guide Tour:</h4>
+                        <p><i class="fa fa-check text-primary me-3"></i>Pick-Up from Airport</p>
+                        <p><i class="fa fa-check text-primary me-3"></i>Selous Game Reserve, Tanzania (4 Days)</p>
+                        <p><i class="fa fa-check text-primary me-3"></i>Ruaha National Park, Tanzania (3 Days)</p>
+                        <p><i class="fa fa-check text-primary me-3"></i>Mount Kilimanjaro National Park, Tanzania (3 Days)</p>
+                        <p><i class="fa fa-check text-primary me-3"></i>Serengeti National Park, Tanzania (2 Days)</p>
+                        <p><i class="fa fa-check text-primary me-3"></i>Drop at Airport</p>
+                        <h4 class="text-primary mb-3">Tailor-made Details:</h4>
+                        <p><i class="fa fa-check text-primary me-3"></i>Boat safari on the Rufiji River in Selous Game Reserve</p>
+                        <p><i class="fa fa-check text-primary me-3"></i>Visit to the majestic Victoria Falls</p>
+                        <h4 class="text-primary mb-3">Recreational Activity:</h4>
+                        <p><i class="fa fa-check text-primary me-3"></i>Boat Ride on Lake Nakuru</p>
+                        <p><i class="fa fa-check text-primary me-3"></i>Swimming at Hot Springs</p>
+                        <a class="btn btn-outline-light px-4 mt-3" href="">Get Started</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="membership-item position-relative">
+                        <img class="img-fluid" src="img/animal-lg-3.jpg" alt="">
+                        <h1 class="display-1">6 Days</h1>
+                        <h4 class="text-primary mb-3">Zebra Crossing Expedition</h4>
+                        <h3 class="text-white mb-4">From $379.00</h3>
+                        <h4 class="text-primary mb-3">Guide Tour:</h4>
+                        <p><i class="fa fa-check text-primary me-3"></i>Pick-Up from Airport</p>
+                        <p><i class="fa fa-check text-primary me-3"></i>Ngorongoro Conservation Area, Tanzania (2 Nights)</p>
+                        <p><i class="fa fa-check text-primary me-3"></i>Serengeti National Park, Tanzania (2 Nights)</p>
+                        <p><i class="fa fa-check text-primary me-3"></i>Tarangire National Park, Tanzania (1 Night)</p>
+                        <p><i class="fa fa-check text-primary me-3"></i>Mount Kilimanjaro National Park, Tanzania (1 Night)</p>
+                        <p><i class="fa fa-check text-primary me-3"></i>Drop at Airport</p>
+                        <h4 class="text-primary mb-3">Tailor-made Details:</h4>
+                        <p><i class="fa fa-check text-primary me-3"></i>Ngorongoro Crater game drive</p>
+                        <p><i class="fa fa-check text-primary me-3"></i>Hot air balloon safari over the Serengeti</p>
+                        <h4 class="text-primary mb-3">Recreational Activity:</h4>
+                        <p><i class="fa fa-check text-primary me-3"></i>Guided Night Game Drive in Tarangire</p>
+                        <p><i class="fa fa-check text-primary me-3"></i>Bird Viewing</p>
+                        <a class="btn btn-outline-light px-4 mt-3" href="">Get Started</a>
+                    </div>
+                </div>
+                <br>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="membership-item position-relative">
+                        <img class="img-fluid" src="img/animal-lg-3.jpg" alt="">
+                        <h1 class="display-1">5 Days</h1>
+                        <h4 class="text-primary mb-3">Giraffe's Grace</h4>
+                        <h3 class="text-white mb-4">From $419.00</h3>
+                        <h4 class="text-primary mb-3">Guide Tour:</h4>
+                        <p><i class="fa fa-check text-primary me-3"></i>Pick-Up from Airport</p>
+                        <p><i class="fa fa-check text-primary me-3"></i>Giraffe Centre, Nairobi (1 Night)</p>
+                        <p><i class="fa fa-check text-primary me-3"></i>Nairobi National Park (1 Night)</p>
+                        <p><i class="fa fa-check text-primary me-3"></i>Lake Nakuru National Park (1 Night)</p>
+                        <p><i class="fa fa-check text-primary me-3"></i>Hells Gate National Park (1 Night)</p>
+                        <p><i class="fa fa-check text-primary me-3"></i>Drop at Airport</p>
+                        <h4 class="text-primary mb-3">Tailor-made Details:</h4>
+                        <p><i class="fa fa-check text-primary me-3"></i>Visit the Giraffe Centre and interact with giraffes</p>
+                        <p><i class="fa fa-check text-primary me-3"></i>Hike to the summit of Mount Longonot</p>
+                        <h4 class="text-primary mb-3">Recreational Activity:</h4>
+                        <p><i class="fa fa-check text-primary me-3"></i>Guided Bicycle Tour in Hells Gate</p>
+                        <p><i class="fa fa-check text-primary me-3"></i>Bird Viewing</p>
+                        <a class="btn btn-outline-light px-4 mt-3" href="">Get Started</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="membership-item position-relative">
+                        <img class="img-fluid" src="img/animal-lg-3.jpg" alt="">
+                        <h1 class="display-1">6 Days</h1>
+                        <h4 class="text-primary mb-3">Hippo's Hideaway Adventure</h4>
+                        <h3 class="text-white mb-4">From $299.00</h3>
+                        <h4 class="text-primary mb-3">Guide Tour:</h4>
+                        <p><i class="fa fa-check text-primary me-3"></i>Pick-Up from Airport</p>
+                        <p><i class="fa fa-check text-primary me-3"></i>Lake Victoria, Kenya (2 Nights)</p>
+                        <p><i class="fa fa-check text-primary me-3"></i>Murchison Falls National Park, Uganda (2 Nights)</p>
+                        <p><i class="fa fa-check text-primary me-3"></i>Ziwa Rhino Sanctuary, Uganda (1 Night)</p>
+                        <p><i class="fa fa-check text-primary me-3"></i>Drop at Airport</p>
+                        <h4 class="text-primary mb-3">Tailor-made Details:</h4>
+                        <p><i class="fa fa-check text-primary me-3"></i>Explore the source of the Nile at Jinja</p>
+                        <p><i class="fa fa-check text-primary me-3"></i>Guided trek to see white rhinos at Ziwa Rhino Sanctuary</p>
+                        <h4 class="text-primary mb-3">Recreational Activity:</h4>
+                        <p><i class="fa fa-check text-primary me-3"></i>Boat Safari on Lake Victoria</p>
+                        <p><i class="fa fa-check text-primary me-3"></i>Bird Viewing</p>
+                        <a class="btn btn-outline-light px-4 mt-3" href="">Get Started</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="membership-item position-relative">
+                        <img class="img-fluid" src="img/animal-lg-3.jpg" alt="">
+                        <h1 class="display-1">5 Days</h1>
+                        <h4 class="text-primary mb-3">Chimpanzee Trek</h4>
+                        <h3 class="text-white mb-4">From $339.00</h3>
+                        <h4 class="text-primary mb-3">Guide Tour:</h4>
+                        <p><i class="fa fa-check text-primary me-3"></i>Pick-Up from Airport</p>
+                        <p><i class="fa fa-check text-primary me-3"></i>Kibale National Park, Uganda (2 Nights)</p>
+                        <p><i class="fa fa-check text-primary me-3"></i>Queen Elizabeth National Park, Uganda (2 Nights)</p>
+                        <p><i class="fa fa-check text-primary me-3"></i>Tarangire National Park, Tanzania (1 Night)</p>
+                        <p><i class="fa fa-check text-primary me-3"></i>Mount Kilimanjaro National Park, Tanzania (1 Night)</p>
+                        <p><i class="fa fa-check text-primary me-3"></i>Drop at Airport</p>
+                        <h4 class="text-primary mb-3">Tailor-made Details:</h4>
+                        <p><i class="fa fa-check text-primary me-3"></i>Boat safari on Kazinga Channel in Queen Elizabeth NP</p>
+                        <p><i class="fa fa-check text-primary me-3"></i>Optional visit to Bigodi Wetland Sanctuary</p>
+                        <h4 class="text-primary mb-3">Recreational Activity:</h4>
+                        <p><i class="fa fa-check text-primary me-3"></i>Chimpanzee Trek in Kibale National Park</p>
+                        <p><i class="fa fa-check text-primary me-3"></i>Bird Viewing</p>
+                        <a class="btn btn-outline-light px-4 mt-3" href="">Get Started</a>
+                    </div>
+                </div>
+                <br>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="membership-item position-relative">
+                        <img class="img-fluid" src="img/animal-lg-3.jpg" alt="">
+                        <h1 class="display-1">6 Days</h1>
+                        <h4 class="text-primary mb-3">Wildebeest Migration Marvel</h4>
+                        <h3 class="text-white mb-4">From $359.00</h3>
+                        <h4 class="text-primary mb-3">Guide Tour:</h4>
+                        <p><i class="fa fa-check text-primary me-3"></i>Pick-Up from Airport</p>
+                        <p><i class="fa fa-check text-primary me-3"></i>Maasai Mara National Reserve, Kenya (3 Nights)</p>
+                        <p><i class="fa fa-check text-primary me-3"></i>Serengeti National Park, Tanzania (2 Nights)</p>
+                        <p><i class="fa fa-check text-primary me-3"></i>Drop at Airport</p>
+                        <h4 class="text-primary mb-3">Tailor-made Details:</h4>
+                        <p><i class="fa fa-check text-primary me-3"></i>Hot air balloon safari over the Serengeti</p>
+                        <p><i class="fa fa-check text-primary me-3"></i>Visit a Maasai village for cultural insights</p>
+                        <h4 class="text-primary mb-3">Recreational Activity:</h4>
+                        <p><i class="fa fa-check text-primary me-3"></i>Witness the Great Wildebeest Migration</p>
+                        <p><i class="fa fa-check text-primary me-3"></i>Maasai Moran Dances</p>
+                        <a class="btn btn-outline-light px-4 mt-3" href="">Get Started</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="membership-item position-relative">
+                        <img class="img-fluid" src="img/animal-lg-3.jpg" alt="">
+                        <h1 class="display-1">5 Days</h1>
+                        <h4 class="text-primary mb-3">Crocodile Cove Escape</h4>
+                        <h3 class="text-white mb-4">From $379.00</h3>
+                        <h4 class="text-primary mb-3">Guide Tour:</h4>
+                        <p><i class="fa fa-check text-primary me-3"></i>Pick-Up from Airport</p>
+                        <p><i class="fa fa-check text-primary me-3"></i>Haller Park Mombasa, Kenya(1 Night)</p>
+                        <p><i class="fa fa-check text-primary me-3"></i>Malindi Marine Park, Kenya (2 Nights)</p>
+                        <p><i class="fa fa-check text-primary me-3"></i>Diani White Sand Beaches, Kenya (1 Night)</p>
+                        <p><i class="fa fa-check text-primary me-3"></i>Drop at Airport</p>
+                        <h4 class="text-primary mb-3">Tailor-made Details:</h4>
+                        <p><i class="fa fa-check text-primary me-3"></i>Guided walking safari in Haller Park</p>
+                        <p><i class="fa fa-check text-primary me-3"></i>Visit to Gedi Ruins, Vasco da Gama Pillar</p>
+                        <h4 class="text-primary mb-3">Recreational Activity:</h4>
+                        <p><i class="fa fa-check text-primary me-3"></i>Coastal Cuisines Experiences </p>
+                        <p><i class="fa fa-check text-primary me-3"></i>Beach Swimming</p>
+                        <a class="btn btn-outline-light px-4 mt-3" href="">Get Started</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="membership-item position-relative">
+                        <img class="img-fluid" src="img/animal-lg-3.jpg" alt="">
+                        <h1 class="display-1">5 Days</h1>
+                        <h4 class="text-primary mb-3">Gazelle's Getaway</h4>
+                        <h3 class="text-white mb-4">From $339.00</h3>
+                        <h4 class="text-primary mb-3">Guide Tour:</h4>
+                        <p><i class="fa fa-check text-primary me-3"></i>Pick-Up from Airport</p>
+                        <p><i class="fa fa-check text-primary me-3"></i>Aberdare National Park, Kenya (2 Nights)</p>
+                        <p><i class="fa fa-check text-primary me-3"></i>Mount Kenya National Park, Kenya (2 Nights)</p>
+                        <p><i class="fa fa-check text-primary me-3"></i>Chaka Ranch, Kenya (1 Nights)</p>
+                        <p><i class="fa fa-check text-primary me-3"></i>Drop at Airport</p>
+                        <h4 class="text-primary mb-3">Tailor-made Details:</h4>
+                        <p><i class="fa fa-check text-primary me-3"></i>Elephant Viewing at Tree Tops</p>
+                        <p><i class="fa fa-check text-primary me-3"></i>Sunset viewing game drives</p>
+                        <h4 class="text-primary mb-3">Recreational Activity:</h4>
+                        <p><i class="fa fa-check text-primary me-3"></i>Guided Forest Walk in Aberdare</p>
+                        <p><i class="fa fa-check text-primary me-3"></i>Waterfall Swimming</p>
+                        <a class="btn btn-outline-light px-4 mt-3" href="">Get Started</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Membership End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid footer bg-dark text-light footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">Address</h5>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, Nairobi, Kenya</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+254 345 67890</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@safaritoursguide.com</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">Quick Links</h5>
+                    <a class="btn btn-link" href="">About Us</a>
+                    <a class="btn btn-link" href="">Contact Us</a>
+                    <a class="btn btn-link" href="">Our Services</a>
+                    <a class="btn btn-link" href="">Terms & Condition</a>
+                    <a class="btn btn-link" href="">Support</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">Popular Links</h5>
+                    <a class="btn btn-link" href="">About Us</a>
+                    <a class="btn btn-link" href="">Contact Us</a>
+                    <a class="btn btn-link" href="">Our Services</a>
+                    <a class="btn btn-link" href="">Terms & Condition</a>
+                    <a class="btn btn-link" href="">Support</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">Newsletter</h5>
+                    <p>Unlock exclusive offers and stories. Join our newsletter today!</p>
+                    <div class="position-relative mx-auto" style="max-width: 400px;">
+                        <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+                        <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a class="border-bottom" href="#">Safari Tours Guide</a>, All Right Reserved.
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        Designed By <a class="border-bottom" href="https://www.linkedin.com/in/lewis-mwendwa-3a2581244/">LewKM</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
