@@ -153,10 +153,11 @@
             <div class="row g-5">
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
                     <p><span class="text-primary me-2">#</span>Contact Us</p>
-                    <h1 class="display-5 mb-4">Have Any Query? Please Contact Us!</h1>
+                    <h1 class="display-5 mb-4">Have A Tailor-Made Plan? Please Contact Us!</h1>
                     <form id="contactForm" action="mail.php" method="post">
                         <div id="step1">
                             <div class="row g-3">
+                                <h4 class="text-primary"><span class="text-dark me-2">#</span>When Will You Visit?</h4>
                                 <div class="col-md-6">
                                     <label for="month">Select Preferred Month:</label>
                                     <select class="form-select bg-light border-0" id="month" name="month">
@@ -194,14 +195,15 @@
                                         <!-- Add more destinations as needed -->
                                     </select>
                                 </div>
-                                <div class="col-12">
+                                <!-- <div class="col-12">
                                     <button class="btn btn-primary w-100 py-3" type="button" onclick="nextStep(2)">Next</button>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
-
+                        <br>
                         <div id="step2">
                             <div class="row g-3">
+                                <h4 class="text-primary"><span class="text-dark me-2">#</span>Number of Clients:</h4>
                                 <div class="col-md-6">
                                     <label for="adults">Number of Adults:</label>
                                     <div class="input-group">
@@ -221,54 +223,62 @@
                                 <div class="col-md-6">
                                     <label for="rooms">Number of Rooms:</label>
                                     <select class="form-select bg-light border-0" id="rooms" name="rooms">
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
+                                        <option value="1">1 Room</option>
+                                        <option value="2">2 Rooms</option>
+                                        <option value="3">3 Rooms</option>
+                                        <option value="4">4 Rooms</option>
+                                        <option value="5">Double Bed Rooms</option>
+
                                         <!-- Add more room options as needed -->
                                     </select>
                                 </div>
                                 <div class="col-md-6">
                                     <label for="budget">Budget per Person:</label>
                                     <select class="form-select bg-light border-0" id="budget" name="budget">
-                                        <option value="$1000">$1000</option>
-                                        <option value="$2000">$2000</option>
+                                        <option value="$1000">$1000 per Person</option>
+                                        <option value="$2000">$2000 per Person</option>
+                                        <option value="$3000">$3000 per Person</option>
+                                        <option value="$4000">$4000 per Person</option>
+                                        <option value="$5000">$5000 per Person</option>
                                         <!-- Add more budget options as needed -->
                                     </select>
                                 </div>
-                                <div class="col-12">
+                                <!-- <div class="col-12">
                                     <button class="btn btn-primary w-100 py-3" type="button" onclick="nextStep(3)">Next</button>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
-
+                        <br>
                         <div id="step3">
                             <div class="row g-3">
-                                <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control bg-light border-0" name="name" id="name" placeholder="Your Name">
-                                        <label for="name">Your Name</label>
+                                <h4 class="text-primary"><span class="text-dark me-2">#</span>Contact Details:</h3>
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control bg-light border-0" name="name" id="name" placeholder="Your Name">
+                                            <label for="name">Your Name</label>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <input type="email" class="form-control bg-light border-0" name="email" id="email" placeholder="Your Email">
-                                        <label for="email">Your Email</label>
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <input type="email" class="form-control bg-light border-0" name="email" id="email" placeholder="Your Email">
+                                            <label for="email">Your Email</label>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control bg-light border-0" name="subject" id="subject" placeholder="Subject">
-                                        <label for="subject">Subject</label>
+                                    <div class="col-12">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control bg-light border-0" name="subject" id="subject" placeholder="Subject">
+                                            <label for="subject">Subject</label>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="form-floating">
-                                        <textarea class="form-control bg-light border-0" placeholder="Leave a message here" name="message" id="message" style="height: 100px"></textarea>
-                                        <label for="message">Message</label>
+                                    <div class="col-12">
+                                        <div class="form-floating">
+                                            <textarea class="form-control bg-light border-0" placeholder="Leave a message here" name="message" id="message" style="height: 100px"></textarea>
+                                            <label for="message">Message</label>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-12">
-                                    <button class="btn btn-primary w-100 py-3" type="submit">Send Message</button>
-                                </div>
+                                    <div class="col-12">
+                                        <button class="btn btn-primary w-100 py-3" type="submit">Send Message</button>
+                                    </div>
                             </div>
                         </div>
                     </form>
