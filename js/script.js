@@ -7,6 +7,7 @@ $(document).ready(function() {
             month: $("#month").val(),
             year: $("#year").val(),
             destination: $("#destination").val(),
+            days: $("days").val(),
             adults: $("#adults").val(),
             children: $("#children").val(),
             rooms: $("#rooms").val(),

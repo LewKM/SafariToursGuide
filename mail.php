@@ -3,6 +3,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $month = $_POST['month'];
     $year = $_POST['year'];
     $destination = $_POST['destination'];
+    $days = $_POST['days'];
     $adults = $_POST['adults'];
     $children = $_POST['children'];
     $rooms = $_POST['rooms'];
