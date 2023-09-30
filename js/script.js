@@ -1,16 +1,35 @@
-document.getElementById('contactForm').addEventListener('submit', function(e) {
-    e.preventDefault();
-    var formData = new FormData(this);
+$(document).ready(function() {
+    $("#contactForm").submit(function(e) {
+        e.preventDefault();
 
-    var xhr = new XMLHttpRequest();
-    xhr.open('POST', 'mail.php', true);
+        // Get form data starting from the month field
+        var formData = {
+            month: $("#month").val(),
+            year: $("#year").val(),
+            destination: $("#destination").val(),
+            adults: $("#adults").val(),
+            children: $("#children").val(),
+            rooms: $("#rooms").val(),
+            budget: $("#budget").val(),
+            name: $("#name").val(),
+            email: $("#email").val(),
+            subject: $("#subject").val(),
+            message: $("#message").val()
+        };
 
-    xhr.onload = function() {
-        if (xhr.status === 200) {
-            document.getElementById('response').innerHTML = xhr.responseText;
-            document.getElementById('contactForm').reset();
-        }
-    };
-
-    xhr.send(formData);
+        $.ajax({
+            type: "POST",
+            url: "mail.php",
+            data: formData,
+            success: function(response) {
+                if (response == "success") {
+                    alert("Message sent successfully!");
+                    // Reset the form
+                    $("#contactForm")[0].reset();
+                } else {
+                    alert("Error sending message. Please try again later.");
+                }
+            }
+        });
+    });
 });

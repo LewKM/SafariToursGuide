@@ -1,5 +1,12 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $month = $_POST['month'];
+    $year = $_POST['year'];
+    $destination = $_POST['destination'];
+    $adults = $_POST['adults'];
+    $children = $_POST['children'];
+    $rooms = $_POST['rooms'];
+    $budget = $_POST['budget'];
     $name = $_POST['name'];
     $email = $_POST['email'];
     $subject = $_POST['subject'];
