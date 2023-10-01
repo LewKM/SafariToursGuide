@@ -88,7 +88,7 @@
                 <a href="service.html" class="nav-item nav-link">Services</a>
                 <a href="package.html" class="nav-item nav-link">Packages</a>
                 <a href="gallery.html" class="nav-item nav-link">Gallery</a>
-                <a href="contact.html" class="nav-item nav-link active">Contact</a>
+                <a href="contact.php" class="nav-item nav-link active">Contact</a>
             </div>
             <!-- <a href="" class="btn btn-primary">Buy Ticket<i class="fa fa-arrow-right ms-3"></i></a> -->
         </div>
@@ -154,13 +154,13 @@
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
                     <p><span class="text-primary me-2">#</span>Contact Us</p>
                     <h1 class="display-5 mb-4">Have A Tailor-Made Plan? Please Contact Us!</h1>
-                    <form id="contactForm">
+                    <form id="contactForm" action="<?php echo $_SERVER['PHP_SELF'];?>" method="POST">
                         <div id="step1">
                             <div class="row g-3">
                                 <h4 class="text-primary"><span class="text-dark me-2">#</span>When Will You Visit?</h4>
                                 <div class="col-md-6">
                                     <label for="month">Select Preferred Month:</label>
-                                    <select class="form-select bg-light border-0 text-center" id="month" name="month">
+                                    <select class="form-select bg-light border-0 text-center" id="month" name="month" value="<?php if(isset($month)) echo $month; ?>">
                                         <option value="january">January</option>
                                         <option value="february">February</option>
                                         <option value="march">March</option>
@@ -175,31 +175,59 @@
                                         <option value="december">December</option>
                                         <!-- Add more months as needed -->
                                     </select>
+                                        <span>
+                                            <?php
+                                                if(isset($error['month'])){
+                                                    echo $error['month'];
+                                                }
+                                            ?>
+                                        </span>
                                 </div>
                                 <div class="col-md-6">
                                     <label for="year">Select Year:</label>
-                                    <select class="form-select bg-light border-0 text-center" id="year" name="year">
+                                    <select class="form-select bg-light border-0 text-center" id="year" name="year" value="<?php if(isset($year)) echo $year; ?>">
                                         <option value="2023">2023</option>
                                         <option value="2024">2024</option>
                                         <option value="2025">2025</option>
                                         <option value="2026">2026</option>
                                         <!-- Add more years as needed -->
                                     </select>
+                                    <span>
+                                            <?php
+                                                if(isset($error['year'])){
+                                                    echo $error['year'];
+                                                }
+                                            ?>
+                                        </span>
                                 </div>
                                 <div class="col-md-6">
                                     <label for="destination">Select Destination:</label>
-                                    <select class="form-select bg-light border-0 text-center" id="destination" name="destination">
+                                    <select class="form-select bg-light border-0 text-center" id="destination" name="destination" value="<?php if(isset($destination)) echo $destination; ?>">
                                         <option value="kenya">Kenya</option>
                                         <option value="tanzania">Tanzania</option>
                                         <option value="uganda">Uganda</option>
                                         <!-- Add more destinations as needed -->
                                     </select>
+                                    <span>
+                                            <?php
+                                                if(isset($error['destination'])){
+                                                    echo $error['destination'];
+                                                }
+                                            ?>
+                                        </span>
                                 </div>
                                 <div class="col-md-6">
                                     <label for="adults">Stay Duration (Days):</label>
                                     <div class="input-group">
-                                        <input type="text" class="form-control text-center" id="days" name="days" value="1">
+                                        <input type="text" class="form-control text-center" id="days" name="days" value="1" value="<?php if(isset($days)) echo $days; ?>">
                                     </div>
+                                    <span>
+                                            <?php
+                                                if(isset($error['days'])){
+                                                    echo $error['days'];
+                                                }
+                                            ?>
+                                        </span>
                                 </div>
                                 <!-- <div class="col-12">
                                     <button class="btn btn-primary w-100 py-3" type="button" onclick="nextStep(2)">Next</button>
@@ -213,18 +241,32 @@
                                 <div class="col-md-6">
                                     <label for="adults">Number of Adults (Age: +15):</label>
                                     <div class="input-group">
-                                        <input type="text" class="form-control text-center" id="adults" name="adults" value="1">
+                                        <input type="text" class="form-control text-center" id="adults" name="adults" value="<?php if(isset($adults)) echo $adults; ?>">
                                     </div>
+                                    <span>
+                                            <?php
+                                                if(isset($error['adults'])){
+                                                    echo $error['adults'];
+                                                }
+                                            ?>
+                                        </span>
                                 </div>
                                 <div class="col-md-6">
                                     <label for="children">Number of Children (Age: 0-15):</label>
                                     <div class="input-group">
-                                        <input type="text" class="form-control text-center" id="children" name="children" value="0">
+                                        <input type="text" class="form-control text-center" id="children" name="children" value="<?php if(isset($children)) echo $children; ?>">
                                     </div>
+                                    <span>
+                                            <?php
+                                                if(isset($error['children'])){
+                                                    echo $error['children'];
+                                                }
+                                            ?>
+                                        </span>
                                 </div>
                                 <div class="col-md-6">
                                     <label for="rooms">Number of Rooms:</label>
-                                    <select class="form-select bg-light border-0 text-center" id="rooms" name="rooms">
+                                    <select class="form-select bg-light border-0 text-center" id="rooms" name="rooms" value="<?php if(isset($rooms)) echo $rooms; ?>">
                                         <option value="1 Room">1 Room</option>
                                         <option value="2 Rooms">2 Rooms</option>
                                         <option value="3 Rooms">3 Rooms</option>
@@ -233,10 +275,17 @@
 
                                         <!-- Add more room options as needed -->
                                     </select>
+                                    <span>
+                                            <?php
+                                                if(isset($error['rooms'])){
+                                                    echo $error['rooms'];
+                                                }
+                                            ?>
+                                        </span>
                                 </div>
                                 <div class="col-md-6">
                                     <label for="budget">Budget per Person:</label>
-                                    <select class="form-select bg-light border-0 text-center" id="budget" name="budget">
+                                    <select class="form-select bg-light border-0 text-center" id="budget" name="budget" value="<?php if(isset($budget)) echo $budget; ?>">
                                         <option value="$1,000 per person">$1,000 per Person</option>
                                         <option value="$2,000 per person">$2,000 per Person</option>
                                         <option value="$3,000 per person">$3,000 per Person</option>
@@ -244,6 +293,13 @@
                                         <option value="$5,000 per person">$5,000 per Person</option>
                                         <!-- Add more budget options as needed -->
                                     </select>
+                                    <span>
+                                            <?php
+                                                if(isset($error['budget'])){
+                                                    echo $error['budget'];
+                                                }
+                                            ?>
+                                        </span>
                                 </div>
                                 <!-- <div class="col-12">
                                     <button class="btn btn-primary w-100 py-3" type="button" onclick="nextStep(3)">Next</button>
@@ -256,34 +312,115 @@
                                 <h4 class="text-primary"><span class="text-dark me-2">#</span>Contact Details:</h3>
                                     <div class="col-md-6">
                                         <div class="form-floating">
-                                            <input type="text" class="form-control bg-light border-0 text-center" name="name" id="name" placeholder="Your Name">
+                                            <input type="text" class="form-control bg-light border-0 text-center" name="name" id="name" placeholder="Your Name" value="<?php if(isset($name)) echo $name; ?>" required>
                                             <label for="name">Your Name</label>
+                                            <span>
+                                            <?php
+                                                if(isset($error['name'])){
+                                                    echo $error['name'];
+                                                }
+                                            ?>
+                                        </span>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-floating">
-                                            <input type="email" class="form-control bg-light border-0 text-center" name="email" id="email" placeholder="Your Email">
+                                            <input type="email" class="form-control bg-light border-0 text-center" name="email" id="email" placeholder="Your Email" value="<?php if(isset($email)) echo $email; ?>" required>
                                             <label for="email">Your Email</label>
+                                            <span>
+                                            <?php
+                                                if(isset($error['email'])){
+                                                    echo $error['email'];
+                                                }
+                                            ?>
+                                        </span>
                                         </div>
                                     </div>
                                     <div class="col-12">
                                         <div class="form-floating">
-                                            <input type="text" class="form-control bg-light border-0 text-center" name="subject" id="subject" placeholder="Subject">
+                                            <input type="text" class="form-control bg-light border-0 text-center" name="subject" id="subject" placeholder="Subject" value="<?php if(isset($subject)) echo $subject; ?>" required>
                                             <label for="subject">Subject</label>
+                                            <span>
+                                            <?php
+                                                if(isset($error['subject'])){
+                                                    echo $error['subject'];
+                                                }
+                                            ?>
+                                        </span>
                                         </div>
                                     </div>
                                     <div class="col-12">
                                         <div class="form-floating">
-                                            <textarea class="form-control bg-light border-0" placeholder="Leave a message here" name="message" id="message" style="height: 100px"></textarea>
+                                            <textarea class="form-control bg-light border-0" placeholder="Leave a message here" name="message" id="message" style="height: 100px" value="<?php if(isset($message)) echo $message; ?>" required></textarea>
                                             <label for="message">Message</label>
+                                            <span>
+                                            <?php
+                                                if(isset($error['message'])){
+                                                    echo $error['message'];
+                                                }
+                                            ?>
+                                        </span>
                                         </div>
                                     </div>
                                     <div class="col-12">
-                                        <button class="btn btn-primary w-100 py-3" type="submit" id="submitButton">Send Message</button>
+                                        <button class="btn btn-primary w-100 py-3" type="submit" id="submitButton" name="btn">Send Message</button>
                                     </div>
                             </div>
                         </div>
                     </form>
+                    <?php
+                        if(isset($_POST['btn'])){
+                            $month = $_POST['month'];
+                            $year = $_POST['year'];
+                            $destination = $_POST['destination'];
+                            $days = $_POST['days'];
+                            $adults = $_POST['adults'];
+                            $children = $_POST['children'];
+                            $rooms = $_POST['rooms'];
+                            $budget = $_POST['budget'];
+                            $name = $_POST['name'];
+                            $subject = $_POST['subject'];
+                            $email = $_POST['email'];
+                            $message = $_POST['message'];
+                    
+                            // Error Checking
+                            $error = [];
+                    
+                            if(empty($_POST['name'])){
+                                $error['name'] = 'Insert Your Name';
+                            }
+                            if(empty($_POST['subject'])){
+                                $error['subject'] = 'Insert Your Subject';
+                            }
+                            if(empty($_POST['email'])){
+                                $error['email'] = 'Insert Your Email';
+                            }
+                            if(empty($_POST['message'])){
+                                $error['message'] = 'Insert Your Message';
+                            }
+
+                            // Mail
+
+                            $to = 'lewisboom321@gmail.com';
+                            $from = $email;
+                            $subject = $subject;
+                            $body = "Name: $name.\n".
+                                    "Email: $email.\n".
+                                    "Message: $message.\n".
+                                    "Tailor-Made Package Plan Request: \n".
+                                    "I am planning to visit $destination in $month $year for $days days with $adults adults and $children children. I would like to stay in $rooms and my budget is $budget.\n".
+                                    "Eagerly waiting to here from you, Thank you.";
+
+                            $check = mail($to, $from, $subject, $body);
+                            if($check == true){
+                                echo "<script>alert('Message Sent Successfully!')</script>";
+                            }
+                            else{
+                                echo "<script>alert('Message Not Sent!')</script>";
+                            }
+                        }
+                    
+                    ?>
                     <div id="response"></div>
                 </div>
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
@@ -372,8 +509,8 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
-    <script src="js/script.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- <script src="js/script.js"></script> -->
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
 </body>
 
 </html>
