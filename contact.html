@@ -154,13 +154,16 @@
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
                     <p><span class="text-primary me-2">#</span>Contact Us</p>
                     <h1 class="display-5 mb-4">Have A Tailor-Made Plan? Please Contact Us!</h1>
-                    <form id="contactForm" action="send-mail.php" method="post">
+
+
+                    <form id="contactForm" method="post" action="mail.php">
+
                         <div id="step1">
                             <div class="row g-3">
                                 <h4 class="text-primary"><span class="text-dark me-2">#</span>When Will You Visit?</h4>
                                 <div class="col-md-6">
                                     <label for="month">Select Preferred Month:</label>
-                                    <select class="form-select bg-light border-0" id="month" name="month">
+                                    <select class="form-select bg-light border-0 text-center" id="month" name="month">
                                         <option value="january">January</option>
                                         <option value="february">February</option>
                                         <option value="march">March</option>
@@ -178,7 +181,7 @@
                                 </div>
                                 <div class="col-md-6">
                                     <label for="year">Select Year:</label>
-                                    <select class="form-select bg-light border-0" id="year" name="year">
+                                    <select class="form-select bg-light border-0 text-center" id="year" name="year">
                                         <option value="2023">2023</option>
                                         <option value="2024">2024</option>
                                         <option value="2025">2025</option>
@@ -188,22 +191,19 @@
                                 </div>
                                 <div class="col-md-6">
                                     <label for="destination">Select Destination:</label>
-                                    <select class="form-select bg-light border-0" id="destination" name="destination">
-                                        <option value="destination1">Kenya</option>
-                                        <option value="destination2">Tanzania</option>
-                                        <option value="destination3">Uganda</option>
+                                    <select class="form-select bg-light border-0 text-center" id="destination" name="destination">
+                                        <option value="Kenya">Kenya</option>
+                                        <option value="Tanzania">Tanzania</option>
+                                        <option value="Uganda">Uganda</option>
                                         <!-- Add more destinations as needed -->
                                     </select>
                                 </div>
                                 <div class="col-md-6">
-                                    <label for="adults">Stay Duration (Days):</label>
+                                    <label for="days">Stay Duration (Days):</label>
                                     <div class="input-group">
-                                        <input type="text" class="form-control text-center" id="days" name="days" value="1" value="<?php if(isset($days)) echo $days; ?>">
+                                        <input type="text" class="form-control text-center" id="days" name="days" value="1">
                                     </div>
                                 </div>
-                                <!-- <div class="col-12">
-                                    <button class="btn btn-primary w-100 py-3" type="button" onclick="nextStep(2)">Next</button>
-                                </div> -->
                             </div>
                         </div>
                         <br>
@@ -213,34 +213,29 @@
                                 <div class="col-md-6">
                                     <label for="adults">Number of Adults:</label>
                                     <div class="input-group">
-                                        <!-- <button class="btn btn-outline-secondary" type="button" id="minusAdults">-</button> -->
                                         <input type="text" class="form-control text-center" id="adults" name="adults" value="1">
-                                        <!-- <button class="btn btn-outline-secondary" type="button" id="plusAdults">+</button> -->
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <label for="children">Number of Children:</label>
                                     <div class="input-group">
-                                        <!-- <button class="btn btn-outline-secondary" type="button" id="minusChildren">-</button> -->
                                         <input type="text" class="form-control text-center" id="children" name="children" value="0">
-                                        <!-- <button class="btn btn-outline-secondary" type="button" id="plusChildren">+</button> -->
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <label for="rooms">Number of Rooms:</label>
-                                    <select class="form-select bg-light border-0" id="rooms" name="rooms">
+                                    <select class="form-select bg-light border-0 text-center" id="rooms" name="rooms">
                                         <option value="1">1 Room</option>
                                         <option value="2">2 Rooms</option>
                                         <option value="3">3 Rooms</option>
                                         <option value="4">4 Rooms</option>
-                                        <option value="5">Double Bed Rooms</option>
-
+                                        <option value="5">5 Rooms</option>
                                         <!-- Add more room options as needed -->
                                     </select>
                                 </div>
                                 <div class="col-md-6">
                                     <label for="budget">Budget per Person:</label>
-                                    <select class="form-select bg-light border-0" id="budget" name="budget">
+                                    <select class="form-select bg-light border-0 text-center" id="budget" name="budget">
                                         <option value="$1000">$1000 per Person</option>
                                         <option value="$2000">$2000 per Person</option>
                                         <option value="$3000">$3000 per Person</option>
@@ -249,45 +244,44 @@
                                         <!-- Add more budget options as needed -->
                                     </select>
                                 </div>
-                                <!-- <div class="col-12">
-                                    <button class="btn btn-primary w-100 py-3" type="button" onclick="nextStep(3)">Next</button>
-                                </div> -->
                             </div>
                         </div>
                         <br>
                         <div id="step3">
                             <div class="row g-3">
-                                <h4 class="text-primary"><span class="text-dark me-2">#</span>Contact Details:</h3>
-                                    <div class="col-md-6">
-                                        <div class="form-floating">
-                                            <input type="text" class="form-control bg-light border-0" name="name" id="name" placeholder="Your Name">
-                                            <label for="name">Your Name</label>
-                                        </div>
+                                <h4 class="text-primary"><span class="text-dark me-2">#</span>Contact Details:</h4>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control bg-light border-0 text-center" name="name" id="name" placeholder="Your Name" required>
+                                        <label for="name">Your Name</label>
                                     </div>
-                                    <div class="col-md-6">
-                                        <div class="form-floating">
-                                            <input type="email" class="form-control bg-light border-0" name="email" id="email" placeholder="Your Email">
-                                            <label for="email">Your Email</label>
-                                        </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control bg-light border-0 text-center" name="email" id="email" placeholder="Your Email" required>
+                                        <label for="email">Your Email</label>
                                     </div>
-                                    <div class="col-12">
-                                        <div class="form-floating">
-                                            <input type="text" class="form-control bg-light border-0" name="subject" id="subject" placeholder="Subject">
-                                            <label for="subject">Subject</label>
-                                        </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control bg-light border-0 text-center" name="subject" id="subject" placeholder="Subject" required>
+                                        <label for="subject">Subject</label>
                                     </div>
-                                    <div class="col-12">
-                                        <div class="form-floating">
-                                            <textarea class="form-control bg-light border-0" placeholder="Leave a message here" name="message" id="message" style="height: 100px"></textarea>
-                                            <label for="message">Message</label>
-                                        </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <textarea class="form-control bg-light border-0" placeholder="Leave a message here" name="message" id="message" style="height: 100px" required></textarea>
+                                        <label for="message">Message</label>
                                     </div>
-                                    <div class="col-12">
-                                        <button class="btn btn-primary w-100 py-3" type="submit" id="submitButton" name="btn">Send Message</button>
-                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn btn-primary w-100 py-3" type="submit" id="submitButton" name="btn">Send Message</button>
+                                </div>
                             </div>
                         </div>
                     </form>
+
+
                     <div id="response"></div>
                 </div>
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
@@ -377,17 +371,30 @@
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
     <script src="js/script.js"></script>
-    <!-- <script>
-        function nextStep(step) {
-            var currentStep = document.getElementById('step' + step);
-            var nextStep = document.getElementById('step' + (step + 1));
+    <script>
+        $(document).ready(function() {
+            $('#contactForm').submit(function(e) {
+                e.preventDefault();
 
-            if (currentStep && nextStep) {
-                currentStep.style.display = 'none';
-                nextStep.style.display = 'block';
-            }
-        }
-    </script> -->
+                var formData = new FormData(this);
+
+                $.ajax({
+                    type: 'POST',
+                    url: 'mail.php',
+                    data: formData,
+                    processData: false,
+                    contentType: false,
+                    success: function(response) {
+                        $('#response').html(response);
+                    },
+                    error: function() {
+                        alert('An error occurred while sending the message.');
+                    }
+                });
+            });
+        });
+    </script>
+
 </body>
 
 </html>

@@ -1,74 +1,230 @@
-# Turaco Tours and Safaris
+[![SWUbanner](https://raw.githubusercontent.com/vshymanskyy/StandWithUkraine/main/banner2-direct.svg)](https://supportukrainenow.org/)
 
-![Turaco Tours and Safaris Logo](logo.png)
+![PHPMailer](https://raw.github.com/PHPMailer/PHPMailer/master/examples/images/phpmailer.png)
 
-Welcome to Turaco Tours and Safaris, your gateway to unforgettable adventures in the heart of East Africa! We specialize in crafting exceptional safari experiences that allow you to explore the diverse landscapes, abundant wildlife, and rich cultures of this incredible region.
+# PHPMailer – A full-featured email creation and transfer class for PHP
 
-## Table of Contents
+[![Test status](https://github.com/PHPMailer/PHPMailer/workflows/Tests/badge.svg)](https://github.com/PHPMailer/PHPMailer/actions)
+[![codecov.io](https://codecov.io/gh/PHPMailer/PHPMailer/branch/master/graph/badge.svg?token=iORZpwmYmM)](https://codecov.io/gh/PHPMailer/PHPMailer)
+[![Latest Stable Version](https://poser.pugx.org/phpmailer/phpmailer/v/stable.svg)](https://packagist.org/packages/phpmailer/phpmailer)
+[![Total Downloads](https://poser.pugx.org/phpmailer/phpmailer/downloads)](https://packagist.org/packages/phpmailer/phpmailer)
+[![License](https://poser.pugx.org/phpmailer/phpmailer/license.svg)](https://packagist.org/packages/phpmailer/phpmailer)
+[![API Docs](https://github.com/phpmailer/phpmailer/workflows/Docs/badge.svg)](https://phpmailer.github.io/PHPMailer/)
+[![OpenSSF Scorecard](https://api.securityscorecards.dev/projects/github.com/PHPMailer/PHPMailer/badge)](https://api.securityscorecards.dev/projects/github.com/PHPMailer/PHPMailer)
 
-- [About Us](#about-us)
-- [Destinations](#destinations)
-- [Tours and Activities](#tours-and-activities)
-- [Booking Information](#booking-information)
-- [Contact Us](#contact-us)
+## Features
+- Probably the world's most popular code for sending email from PHP!
+- Used by many open-source projects: WordPress, Drupal, 1CRM, SugarCRM, Yii, Joomla! and many more
+- Integrated SMTP support – send without a local mail server
+- Send emails with multiple To, CC, BCC, and Reply-to addresses
+- Multipart/alternative emails for mail clients that do not read HTML email
+- Add attachments, including inline
+- Support for UTF-8 content and 8bit, base64, binary, and quoted-printable encodings
+- SMTP authentication with LOGIN, PLAIN, CRAM-MD5, and XOAUTH2 mechanisms over SMTPS and SMTP+STARTTLS transports
+- Validates email addresses automatically
+- Protects against header injection attacks
+- Error messages in over 50 languages!
+- DKIM and S/MIME signing support
+- Compatible with PHP 5.5 and later, including PHP 8.2
+- Namespaced to prevent name clashes
+- Much more!
 
-## About Us
+## Why you might need it
+Many PHP developers need to send email from their code. The only PHP function that supports this directly is [`mail()`](https://www.php.net/manual/en/function.mail.php). However, it does not provide any assistance for making use of popular features such as encryption, authentication, HTML messages, and attachments.
 
-At Turaco Tours and Safaris, we are passionate about providing you with authentic and immersive travel experiences. Our team of expert guides and local experts are dedicated to ensuring that every moment of your journey is filled with wonder and discovery.
+Formatting email correctly is surprisingly difficult. There are myriad overlapping (and conflicting) standards, requiring tight adherence to horribly complicated formatting and encoding rules – the vast majority of code that you'll find online that uses the `mail()` function directly is just plain wrong, if not unsafe!
 
-We believe in sustainable tourism and work closely with local communities and conservation initiatives to promote responsible travel. By choosing Turaco Tours and Safaris, you are contributing to the preservation of East Africa's natural and cultural heritage.
+The PHP `mail()` function usually sends via a local mail server, typically fronted by a `sendmail` binary on Linux, BSD, and macOS platforms, however, Windows usually doesn't include a local mail server; PHPMailer's integrated SMTP client allows email sending on all platforms without needing a local mail server. Be aware though, that the `mail()` function should be avoided when possible; it's both faster and [safer](https://exploitbox.io/paper/Pwning-PHP-Mail-Function-For-Fun-And-RCE.html) to use SMTP to localhost.
 
-## Destinations
+*Please* don't be tempted to do it yourself – if you don't use PHPMailer, there are many other excellent libraries that
+you should look at before rolling your own. Try [SwiftMailer](https://swiftmailer.symfony.com/)
+, [Laminas/Mail](https://docs.laminas.dev/laminas-mail/), [ZetaComponents](https://github.com/zetacomponents/Mail), etc.
 
-### Kenya
+## License
+This software is distributed under the [LGPL 2.1](http://www.gnu.org/licenses/lgpl-2.1.html) license, along with the [GPL Cooperation Commitment](https://gplcc.github.io/gplcc/). Please read [LICENSE](https://github.com/PHPMailer/PHPMailer/blob/master/LICENSE) for information on the software availability and distribution.
 
-- **Maasai Mara National Reserve**: Witness the Great Migration and experience some of the world's best wildlife viewing.
+## Installation & loading
+PHPMailer is available on [Packagist](https://packagist.org/packages/phpmailer/phpmailer) (using semantic versioning), and installation via [Composer](https://getcomposer.org) is the recommended way to install PHPMailer. Just add this line to your `composer.json` file:
 
-- **Amboseli National Park**: Get up close with the majestic elephants and enjoy breathtaking views of Mount Kilimanjaro.
+```json
+"phpmailer/phpmailer": "^6.8.1"
+```
 
-### Tanzania
+or run
 
-- **Serengeti National Park**: Explore the iconic savannahs and witness the dramatic predator-prey interactions.
+```sh
+composer require phpmailer/phpmailer
+```
 
-- **Ngorongoro Conservation Area**: Descend into the world's largest unbroken volcanic caldera for a unique wildlife encounter.
+Note that the `vendor` folder and the `vendor/autoload.php` script are generated by Composer; they are not part of PHPMailer.
 
-### Uganda
+If you want to use the Gmail XOAUTH2 authentication class, you will also need to add a dependency on the `league/oauth2-client` package in your `composer.json`.
 
-- **Bwindi Impenetrable Forest**: Embark on a gorilla trekking adventure and get a chance to encounter these magnificent creatures.
+Alternatively, if you're not using Composer, you
+can [download PHPMailer as a zip file](https://github.com/PHPMailer/PHPMailer/archive/master.zip), (note that docs and examples are not included in the zip file), then copy the contents of the PHPMailer folder into one of the `include_path` directories specified in your PHP configuration and load each class file manually:
 
-- **Queen Elizabeth National Park**: Discover the incredible biodiversity of this park, home to a wide variety of wildlife.
+```php
+<?php
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
 
-## Tours and Activities
+require 'path/to/PHPMailer/src/Exception.php';
+require 'path/to/PHPMailer/src/PHPMailer.php';
+require 'path/to/PHPMailer/src/SMTP.php';
+```
 
-From classic safaris to cultural immersions, we offer a wide range of tours and activities to suit every traveler's interests and preferences:
+If you're not using the `SMTP` class explicitly (you're probably not), you don't need a `use` line for the SMTP class. Even if you're not using exceptions, you do still need to load the `Exception` class as it is used internally.
 
-- **Classic Safari Adventures**: Game drives, walking safaris, and birdwatching expeditions.
+## Legacy versions
+PHPMailer 5.2 (which is compatible with PHP 5.0 — 7.0) is no longer supported, even for security updates. You will find the latest version of 5.2 in the [5.2-stable branch](https://github.com/PHPMailer/PHPMailer/tree/5.2-stable). If you're using PHP 5.5 or later (which you should be), switch to the 6.x releases.
 
-- **Cultural Experiences**: Interact with local communities, learn about their traditions, and savor traditional cuisine.
+### Upgrading from 5.2
+The biggest changes are that source files are now in the `src/` folder, and PHPMailer now declares the namespace `PHPMailer\PHPMailer`. This has several important effects – [read the upgrade guide](https://github.com/PHPMailer/PHPMailer/tree/master/UPGRADING.md) for more details.
 
-- **Gorilla and Chimpanzee Trekking**: Embark on a once-in-a-lifetime journey to observe these incredible primates in their natural habitat.
+### Minimal installation
+While installing the entire package manually or with Composer is simple, convenient, and reliable, you may want to include only vital files in your project. At the very least you will need [src/PHPMailer.php](https://github.com/PHPMailer/PHPMailer/tree/master/src/PHPMailer.php). If you're using SMTP, you'll need [src/SMTP.php](https://github.com/PHPMailer/PHPMailer/tree/master/src/SMTP.php), and if you're using POP-before SMTP (*very* unlikely!), you'll need [src/POP3.php](https://github.com/PHPMailer/PHPMailer/tree/master/src/POP3.php). You can skip the [language](https://github.com/PHPMailer/PHPMailer/tree/master/language/) folder if you're not showing errors to users and can make do with English-only errors. If you're using XOAUTH2 you will need [src/OAuth.php](https://github.com/PHPMailer/PHPMailer/tree/master/src/OAuth.php) as well as the Composer dependencies for the services you wish to authenticate with. Really, it's much easier to use Composer!
 
-- **Customized Itineraries**: Tailor-made experiences designed to match your specific interests and schedule.
+## A Simple Example
 
-## Booking Information
+```php
+<?php
+//Import PHPMailer classes into the global namespace
+//These must be at the top of your script, not inside a function
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\SMTP;
+use PHPMailer\PHPMailer\Exception;
 
-Ready to embark on your East African adventure? Here's how you can get started:
+//Load Composer's autoloader
+require 'vendor/autoload.php';
 
-1. Visit our [website](https://www.turacotoursandsafaris.com) to explore our tours and destinations.
-2. Select your preferred itinerary and check for availability.
-3. Contact our friendly team to customize your trip and get a detailed quote.
-4. Confirm your booking by making a deposit, and get ready for an unforgettable journey!
+//Create an instance; passing `true` enables exceptions
+$mail = new PHPMailer(true);
 
-## Contact Us
+try {
+    //Server settings
+    $mail->SMTPDebug = SMTP::DEBUG_SERVER;                      //Enable verbose debug output
+    $mail->isSMTP();                                            //Send using SMTP
+    $mail->Host       = 'smtp.example.com';                     //Set the SMTP server to send through
+    $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
+    $mail->Username   = 'user@example.com';                     //SMTP username
+    $mail->Password   = 'secret';                               //SMTP password
+    $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
+    $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
-Have questions or need assistance? Feel free to reach out to us:
+    //Recipients
+    $mail->setFrom('from@example.com', 'Mailer');
+    $mail->addAddress('joe@example.net', 'Joe User');     //Add a recipient
+    $mail->addAddress('ellen@example.com');               //Name is optional
+    $mail->addReplyTo('info@example.com', 'Information');
+    $mail->addCC('cc@example.com');
+    $mail->addBCC('bcc@example.com');
 
-- **Email**: info@turacotours.com
-- **Phone**: +254-XXX-XXXX
-- **Address**: [Insert Address]
+    //Attachments
+    $mail->addAttachment('/var/tmp/file.tar.gz');         //Add attachments
+    $mail->addAttachment('/tmp/image.jpg', 'new.jpg');    //Optional name
 
-Follow us on [Facebook](https://www.facebook.com/turacotours) | [Twitter](https://twitter.com/turacotours) | [Instagram](https://www.instagram.com/turacotours) for the latest updates and travel inspiration!
+    //Content
+    $mail->isHTML(true);                                  //Set email format to HTML
+    $mail->Subject = 'Here is the subject';
+    $mail->Body    = 'This is the HTML message body <b>in bold!</b>';
+    $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
----
+    $mail->send();
+    echo 'Message has been sent';
+} catch (Exception $e) {
+    echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+}
+```
 
-*Note: Replace placeholders (like [Insert Address]) with actual information. Provide your own contact details and customize the content to reflect the specific offerings and details of Turaco Tours and Safaris.*
+You'll find plenty to play with in the [examples](https://github.com/PHPMailer/PHPMailer/tree/master/examples) folder, which covers many common scenarios including sending through Gmail, building contact forms, sending to mailing lists, and more.
+
+If you are re-using the instance (e.g. when sending to a mailing list), you may need to clear the recipient list to avoid sending duplicate messages. See [the mailing list example](https://github.com/PHPMailer/PHPMailer/blob/master/examples/mailing_list.phps) for further guidance.
+
+That's it. You should now be ready to use PHPMailer!
+
+## Localization
+PHPMailer defaults to English, but in the [language](https://github.com/PHPMailer/PHPMailer/tree/master/language/) folder, you'll find many translations for PHPMailer error messages that you may encounter. Their filenames contain [ISO 639-1](http://en.wikipedia.org/wiki/ISO_639-1) language code for the translations, for example `fr` for French. To specify a language, you need to tell PHPMailer which one to use, like this:
+
+```php
+//To load the French version
+$mail->setLanguage('fr', '/optional/path/to/language/directory/');
+```
+
+We welcome corrections and new languages – if you're looking for corrections, run the [Language/TranslationCompletenessTest.php](https://github.com/PHPMailer/PHPMailer/blob/master/test/Language/TranslationCompletenessTest.php) script in the tests folder and it will show any missing translations.
+
+## Documentation
+Start reading at the [GitHub wiki](https://github.com/PHPMailer/PHPMailer/wiki). If you're having trouble, head for [the troubleshooting guide](https://github.com/PHPMailer/PHPMailer/wiki/Troubleshooting) as it's frequently updated.
+
+Examples of how to use PHPMailer for common scenarios can be found in the [examples](https://github.com/PHPMailer/PHPMailer/tree/master/examples) folder. If you're looking for a good starting point, we recommend you start with [the Gmail example](https://github.com/PHPMailer/PHPMailer/tree/master/examples/gmail.phps).
+
+To reduce PHPMailer's deployed code footprint, examples are not included if you load PHPMailer via Composer or via [GitHub's zip file download](https://github.com/PHPMailer/PHPMailer/archive/master.zip), so you'll need to either clone the git repository or use the above links to get to the examples directly.
+
+Complete generated API documentation is [available online](https://phpmailer.github.io/PHPMailer/).
+
+You can generate complete API-level documentation by running `phpdoc` in the top-level folder, and documentation will appear in the `docs` folder, though you'll need to have [PHPDocumentor](http://www.phpdoc.org) installed. You may find [the unit tests](https://github.com/PHPMailer/PHPMailer/blob/master/test/PHPMailerTest.php) a good reference for how to do various operations such as encryption.
+
+If the documentation doesn't cover what you need, search the [many questions on Stack Overflow](http://stackoverflow.com/questions/tagged/phpmailer), and before you ask a question about "SMTP Error: Could not connect to SMTP host.", [read the troubleshooting guide](https://github.com/PHPMailer/PHPMailer/wiki/Troubleshooting).
+
+## Tests
+[PHPMailer tests](https://github.com/PHPMailer/PHPMailer/tree/master/test/) use PHPUnit 9, with [a polyfill](https://github.com/Yoast/PHPUnit-Polyfills) to let 9-style tests run on older PHPUnit and PHP versions.
+
+[![Test status](https://github.com/PHPMailer/PHPMailer/workflows/Tests/badge.svg)](https://github.com/PHPMailer/PHPMailer/actions)
+
+If this isn't passing, is there something you can do to help?
+
+## Security
+Please disclose any vulnerabilities found responsibly – report security issues to the maintainers privately.
+
+See [SECURITY](https://github.com/PHPMailer/PHPMailer/tree/master/SECURITY.md) and [PHPMailer's security advisories on GitHub](https://github.com/PHPMailer/PHPMailer/security). 
+
+## Contributing
+Please submit bug reports, suggestions, and pull requests to the [GitHub issue tracker](https://github.com/PHPMailer/PHPMailer/issues).
+
+We're particularly interested in fixing edge cases, expanding test coverage, and updating translations.
+
+If you found a mistake in the docs, or want to add something, go ahead and amend the wiki – anyone can edit it.
+
+If you have git clones from prior to the move to the PHPMailer GitHub organisation, you'll need to update any remote URLs referencing the old GitHub location with a command like this from within your clone:
+
+```sh
+git remote set-url upstream https://github.com/PHPMailer/PHPMailer.git
+```
+
+Please *don't* use the SourceForge or Google Code projects any more; they are obsolete and no longer maintained.
+
+## Sponsorship
+Development time and resources for PHPMailer are provided by [Smartmessages.net](https://info.smartmessages.net/), the world's only privacy-first email marketing system.
+
+<a href="https://info.smartmessages.net/"><img src="https://www.smartmessages.net/img/smartmessages-logo.svg" width="550" alt="Smartmessages.net privacy-first email marketing logo"></a>
+
+Donations are very welcome, whether in beer 🍺, T-shirts 👕, or cold, hard cash 💰. Sponsorship through GitHub is a simple and convenient way to say "thank you" to PHPMailer's maintainers and contributors – just click the "Sponsor" button [on the project page](https://github.com/PHPMailer/PHPMailer). If your company uses PHPMailer, consider taking part in Tidelift's enterprise support programme.
+
+## PHPMailer For Enterprise
+
+Available as part of the Tidelift Subscription.
+
+The maintainers of PHPMailer and thousands of other packages are working with Tidelift to deliver commercial
+support and maintenance for the open-source packages you use to build your applications. Save time, reduce risk, and
+improve code health, while paying the maintainers of the exact packages you
+use. [Learn more.](https://tidelift.com/subscription/pkg/packagist-phpmailer-phpmailer?utm_source=packagist-phpmailer-phpmailer&utm_medium=referral&utm_campaign=enterprise&utm_term=repo)
+
+## Changelog
+See [changelog](changelog.md).
+
+## History
+- PHPMailer was originally written in 2001 by Brent R. Matzelle as a [SourceForge project](http://sourceforge.net/projects/phpmailer/).
+- [Marcus Bointon](https://github.com/Synchro) (`coolbru` on SF) and Andy Prevost (`codeworxtech`) took over the project in 2004.
+- Became an Apache incubator project on Google Code in 2010, managed by Jim Jagielski.
+- Marcus created [his fork on GitHub](https://github.com/Synchro/PHPMailer) in 2008.
+- Jim and Marcus decide to join forces and use GitHub as the canonical and official repo for PHPMailer in 2013.
+- PHPMailer moves to [the PHPMailer organisation](https://github.com/PHPMailer) on GitHub in 2013.
+
+### What's changed since moving from SourceForge?
+- Official successor to the SourceForge and Google Code projects.
+- Test suite.
+- Continuous integration with GitHub Actions.
+- Composer support.
+- Public development.
+- Additional languages and language strings.
+- CRAM-MD5 authentication support.
+- Preserves full repo history of authors, commits, and branches from the original SourceForge project.
