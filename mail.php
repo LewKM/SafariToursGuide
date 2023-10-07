@@ -12,43 +12,39 @@ $email = $_POST["email"];
 $subject = $_POST["subject"];
 $message = $_POST["message"];
 
-$email_body = "Hello, I am $name, this is my email $email. I am interested in a $days day safari to $destination in $month $year. I will be traveling with $adults adults and $children children. I would like $rooms rooms. My budget is $budget. $message";
-
+$email_body = "$message. Below are the details for plan package, I am $name, this is my email $email. I am interested in a $days day safari to $destination in $month $year. I will be traveling with $adults adults and $children children. I would like $rooms rooms. My budget is $budget. $message";
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-require 'vendor/autoload.php'; // This should be the path to your Composer autoload file
+require $_SERVER['DOCUMENT_ROOT'] . '/mail/Exception.php';
+require $_SERVER['DOCUMENT_ROOT'] . '/mail/PHPMailer.php';
+require $_SERVER['DOCUMENT_ROOT'] . '/mail/SMTP.php';
 
-// Check if the form was submitted
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Initialize PHPMailer
-    $mail = new PHPMailer(true);
+$mail = new PHPMailer;
+$mail->isSMTP(); 
+$mail->SMTPDebug = 2; // 0 = off (for production use) - 1 = client messages - 2 = client and server messages
+$mail->Host = "smtp.gmail.com"; //  SMTP over IPv6
+$mail->Port = 587; // TLS only
+$mail->SMTPSecure = 'tls'; // ssl is deprecated
+$mail->SMTPAuth = true;
+$mail->Username = 'lewiskathembe51@gmail.com'; // email
+$mail->Password = 'gwvrkkfqihgctzic'; // password
+$mail->setFrom($email, $name);
+$mail->addAddress('lewismwendwa321@gmail.com', 'Lewis Kathembe'); // Replace with recipient address
+$mail->isHTML(true);
+$mail->Subject = $_POST['subject'];
+$mail->Body  = $email_body;
 
-    try {
-        // Server settings
-        $mail->isSMTP();
-        $mail->Host = 'smtp.gmail.com'; // Replace with your SMTP server
-        $mail->SMTPAuth = true;
-        $mail->Username = 'lewiskathembe51@gmail.com'; // Replace with your SMTP username
-        $mail->Password = 'gwvrkkfqihgctzic'; // Replace with your SMTP password
-        $mail->SMTPSecure = 'tls';
-        $mail->Port = 587;
-
-        // Sender and recipient pick the setfrom to get the name from th contact
-        $mail->setFrom($email, $name);
-        $mail->addAddress('lewismwendwa321@gmail.com', 'Lewis Kathembe'); // Replace with recipient address
-
-        // Content  
-        $mail->isHTML(true);
-        $mail->Subject = $_POST['subject'];
-        $mail->Body  = $email_body;
-
-        // Send email
-        $mail->send();
-        echo 'Message sent successfully!';
-    } catch (Exception $e) {
-        echo 'Mailer Error: ' . $mail->ErrorInfo;
-    }
-}
-?>
+$mail->SMTPOptions = array(
+                    'ssl' => array(
+                        'verify_peer' => false,
+                        'verify_peer_name' => false,
+                        'allow_self_signed' => true
+                    )
+                );
+if(!$mail->send()){
+    echo "Mailer Error: " . $mail->ErrorInfo;
+}else{
+    echo "Message sent!";
+}?>
