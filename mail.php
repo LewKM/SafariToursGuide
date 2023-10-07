@@ -47,9 +47,11 @@ if(!$mail->send()){
     echo 'alert("Mailer Error: " . $mail->ErrorInfo)';
 }else{
     echo  '<script type ="text/JavaScript">';  
-    echo 'alert("Message Sent Successfully!")';  
+    echo 'alert("Message Sent Successfully!");';
+    echo 'document.getElementById("contactForm").reset();'; // Reset the form with id "contact-form"
     echo '</script>';
-}?>
+}
+?>
 
 
 
