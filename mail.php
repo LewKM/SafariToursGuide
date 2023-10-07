@@ -52,6 +52,3 @@ if(!$mail->send()){
     echo '</script>';
 }
 ?>
-
-
-
