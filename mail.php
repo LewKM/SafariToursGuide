@@ -31,7 +31,7 @@ $mail->SMTPAuth = true;
 $mail->Username = 'safaritoursguide@gmail.com'; // email
 $mail->Password = 'cwvlvbnyierwlmes'; // password
 $mail->setFrom($email, $name);
-$mail->addAddress('info@safaritoursguide.com', 'Lewis Kathembe'); // Replace with recipient address
+$mail->addAddress('info@safaritoursguide.com', 'Safari Tours Guide Ltd'); // Replace with recipient address
 $mail->isHTML(true);
 $mail->Subject = $_POST['subject'];
 $mail->Body  = $email_body;
