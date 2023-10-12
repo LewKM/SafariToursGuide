@@ -31,7 +31,7 @@ $mail->SMTPAuth = true;
 $mail->Username = 'lewiskathembe51@gmail.com'; // email
 $mail->Password = 'gwvrkkfqihgctzic'; // password
 $mail->setFrom($email, $name);
-$mail->addAddress('lewismwendwa321@gmail.com', 'Lewis Kathembe'); // Replace with recipient address
+$mail->addAddress('safaritoursguide@gmail.com', 'Lewis Kathembe'); // Replace with recipient address
 $mail->isHTML(true);
 $mail->Subject = $_POST['subject'];
 $mail->Body  = $email_body;
