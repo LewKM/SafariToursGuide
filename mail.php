@@ -12,7 +12,7 @@ $email = $_POST["email"];
 $subject = $_POST["subject"];
 $message = $_POST["message"];
 
-$email_body = "$message\n. Below are my travel details,\n I am $name, this is my email $email. I am interested in a $days day safari to $destination in $month $year. I will be traveling with $adults adults and $children children. I would like $rooms rooms. My budget is $budget.";
+$email_body = "$message\n. Below are my travel details,\n I am $name, this is my email $email. I am interested in a $days day safari to $destination in $month $year. I will be traveling with $adults adults and $children children. I would like $rooms. My budget is $budget.";
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
