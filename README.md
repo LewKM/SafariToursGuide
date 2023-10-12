@@ -1,8 +1,8 @@
-# Turaco Tours and Safaris
+# Safari Tours Guide Ltd.
 
-![Turaco Tours and Safaris Logo](logo.png)
+![Safari Tours Guide Logo](img/turaco.ico)
 
-Welcome to Turaco Tours and Safaris, your gateway to unforgettable adventures in the heart of East Africa! We specialize in crafting exceptional safari experiences that allow you to explore the diverse landscapes, abundant wildlife, and rich cultures of this incredible region.
+Welcome to Safari Tours Guide, your gateway to unforgettable adventures in the heart of East Africa! We specialize in crafting exceptional safari experiences that allow you to explore the diverse landscapes, abundant wildlife, and rich cultures of this incredible region.
 
 ## Table of Contents
 
@@ -14,9 +14,9 @@ Welcome to Turaco Tours and Safaris, your gateway to unforgettable adventures in
 
 ## About Us
 
-At Turaco Tours and Safaris, we are passionate about providing you with authentic and immersive travel experiences. Our team of expert guides and local experts are dedicated to ensuring that every moment of your journey is filled with wonder and discovery.
+At Safari Tours Guide, we are passionate about providing you with authentic and immersive travel experiences. Our team of expert guides and local experts are dedicated to ensuring that every moment of your journey is filled with wonder and discovery.
 
-We believe in sustainable tourism and work closely with local communities and conservation initiatives to promote responsible travel. By choosing Turaco Tours and Safaris, you are contributing to the preservation of East Africa's natural and cultural heritage.
+We believe in sustainable tourism and work closely with local communities and conservation initiatives to promote responsible travel. By choosing Safari Tours Guide, you are contributing to the preservation of East Africa's natural and cultural heritage.
 
 ## Destinations
 
@@ -54,7 +54,7 @@ From classic safaris to cultural immersions, we offer a wide range of tours and 
 
 Ready to embark on your East African adventure? Here's how you can get started:
 
-1. Visit our [website](https://www.turacotoursandsafaris.com) to explore our tours and destinations.
+1. Visit our [website](https://www.safaritoursguide.com) to explore our tours and destinations.
 2. Select your preferred itinerary and check for availability.
 3. Contact our friendly team to customize your trip and get a detailed quote.
 4. Confirm your booking by making a deposit, and get ready for an unforgettable journey!
@@ -63,11 +63,11 @@ Ready to embark on your East African adventure? Here's how you can get started:
 
 Have questions or need assistance? Feel free to reach out to us:
 
-- **Email**: info@turacotours.com
-- **Phone**: +254-XXX-XXXX
-- **Address**: [Insert Address]
+- **Email**: info@safaritoursguide.com
+- **Phone**: +44-XXX-XXXX
+- **Address**: [Covent Garden, London, United Kingdom]
 
-Follow us on [Facebook](https://www.facebook.com/turacotours) | [Twitter](https://twitter.com/turacotours) | [Instagram](https://www.instagram.com/turacotours) for the latest updates and travel inspiration!
+Follow us on [Facebook](https://www.facebook.com/safaritoursguide) | [Twitter](https://twitter.com/safaritoursguide) | [Instagram](https://www.instagram.com/safaritoursguide) for the latest updates and travel inspiration!
 
 ---
 
