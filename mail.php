@@ -28,8 +28,8 @@ $mail->Host = "smtp.gmail.com"; //  SMTP over IPv6
 $mail->Port = 587; // TLS only
 $mail->SMTPSecure = 'tls'; // ssl is deprecated
 $mail->SMTPAuth = true;
-$mail->Username = 'lewiskathembe51@gmail.com'; // email
-$mail->Password = 'gwvrkkfqihgctzic'; // password
+$mail->Username = 'safaritoursguide@gmail.com'; // email
+$mail->Password = 'cwvlvbnyierwlmes'; // password
 $mail->setFrom($email, $name);
 $mail->addAddress('info@safaritoursguide.com', 'Lewis Kathembe'); // Replace with recipient address
 $mail->isHTML(true);
