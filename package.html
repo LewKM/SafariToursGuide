@@ -146,7 +146,7 @@
                         <p><i class="fa fa-check text-primary me-3"></i>Boat Ride on Lake Nakuru</p>
                         <p><i class="fa fa-check text-primary me-3"></i>Swimming at Hot Springs</p>
                         <div class="col-12">
-                            <button class="btn btn-primary w-50 py-3 btn-sm " type="button" id="submitButton" name="btn" data-bs-toggle="modal"data-package-id="1" data-bs-target="#packageModal">Read More
+                            <button class="btn btn-primary w-50 py-3 btn-sm " type="button" id="submitButton" name="btn" data-bs-toggle="modal" data-package-id="1" data-bs-target="#packageModal">Read More
                             </button>
                         </div>
                     </div>
@@ -167,10 +167,10 @@
                                     <button type="button" class="btn btn-outline-primary active" id="overview-tab" data-bs-toggle="tab" data-bs-target="#overview" role="tab" aria-controls="overview" aria-selected="true">Overview</button>
                                     <button type="button" class="btn btn-outline-primary" id="dayByDay-tab" data-bs-toggle="tab" data-bs-target="#dayByDay" role="tab" aria-controls="dayByDay" aria-selected="false">Day by Day</button>
                                     <button type="button" class="btn btn-outline-primary" id="rates-tab" data-bs-toggle="tab" data-bs-target="#rates" role="tab" aria-controls="rates" aria-selected="false">Rates</button>
-                                    <button type="button" class="btn btn-outline-primary" id="rates-tab" data-bs-toggle="tab" data-bs-target="#rates" role="tab" aria-controls="rates" aria-selected="false">Inclusions</button>
-                                    <button type="button" class="btn btn-outline-primary" id="rates-tab" data-bs-toggle="tab" data-bs-target="#rates" role="tab" aria-controls="rates" aria-selected="false">Transportation</button>
+                                    <button type="button" class="btn btn-outline-primary" id="inclusions-tab" data-bs-toggle="tab" data-bs-target="#inclusions" role="tab" aria-controls="inclusions" aria-selected="false">Inclusions</button>
+                                    <button type="button" class="btn btn-outline-primary" id="transportation-tab" data-bs-toggle="tab" data-bs-target="#transportation" role="tab" aria-controls="transportation" aria-selected="false">Transportation</button>
                                 </div>
-                                
+
                                 <!-- Tab panes -->
                                 <div class="tab-content" id="packageTabsContent">
                                     <div class="tab-pane fade show active" id="overview" role="tabpanel" aria-labelledby="overview-tab">
@@ -184,6 +184,50 @@
                                     <div class="tab-pane fade" id="rates" role="tabpanel" aria-labelledby="rates-tab">
                                         <h4>Rates</h4>
                                         <p>Rates content goes here.</p>
+                                        <table id="ratesTable">
+                                            <thead>
+                                                <tr>
+                                                    <th>Date</th>
+                                                    <th>Solo Price</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>2023-11-01</td>
+                                                    <td>100</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2023-11-02</td>
+                                                    <td>120</td>
+                                                </tr>
+                                                <!-- Add more rows as needed -->
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="tab-pane fade" id="inclusions" role="tabpanel" aria-labelledby="inclusions-tab">
+                                        <h4>Inclusions</h4>
+                                        <p>Inclusions content goes here.</p>
+                                    </div>
+                                    <div class="tab-pane fade" id="transportation" role="tabpanel" aria-labelledby="transportation-tab">
+                                        <h4>Transportation</h4>
+                                        <p>Transportation content goes here.</p>
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label for="numOfPeople" class="form-label">Number of People</label>
+                                        <input type="number" class="form-control" id="numOfPeople" min="1" value="1">
+                                    </div>
+
+                                    <!-- Date Picker -->
+                                    <div class="mb-3">
+                                        <label for="datePicker" class="form-label">Select Date</label>
+                                        <input type="date" class="form-control" id="datePicker">
+                                    </div>
+
+                                    <!-- Price Calculation -->
+                                    <div class="mb-3">
+                                        <label for="totalPrice" class="form-label">Total Price</label>
+                                        <span id="totalPrice">$ 500</span>
                                     </div>
                                 </div>
                             </div>
@@ -560,6 +604,49 @@
             updateTabContent('overview');
         });
     </script>
+
+    <!-- JavaScript Code -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const numOfPeopleInput = document.getElementById('numOfPeople');
+            const datePicker = document.getElementById('datePicker');
+            const totalPriceDisplay = document.getElementById('totalPrice');
+
+            function calculatePrice() {
+                const numOfPeople = parseInt(numOfPeopleInput.value);
+                const selectedDate = datePicker.value;
+                let basePrice = 0;
+
+                // Get the solo price from the rates table based on the selected date
+                const ratesTable = document.getElementById('ratesTable');
+                const rows = ratesTable.getElementsByTagName('tr');
+
+                for (let i = 1; i < rows.length; i++) {
+                    const cells = rows[i].getElementsByTagName('td');
+                    if (cells[0].textContent === selectedDate) {
+                        basePrice = parseInt(cells[1].textContent);
+                        break;
+                    }
+                }
+
+                // Additional logic for pricing calculation based on the number of people and date
+                let totalPrice = basePrice * numOfPeople;
+
+                // Apply discount if more than 1 person
+                if (numOfPeople > 1) {
+                    const discountPercentage = 5;
+                    const discountAmount = (totalPrice * discountPercentage) / 100;
+                    totalPrice -= discountAmount;
+                }
+
+                totalPriceDisplay.textContent = `$${totalPrice}`;
+            }
+
+            numOfPeopleInput.addEventListener('input', calculatePrice);
+            datePicker.addEventListener('input', calculatePrice);
+        });
+    </script>
+
 
 
 </body>
