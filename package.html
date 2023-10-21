@@ -145,8 +145,8 @@
                         <h4 class="text-primary mb-3">Recreational Activity:</h4>
                         <p><i class="fa fa-check text-primary me-3"></i>Boat Ride on Lake Nakuru</p>
                         <p><i class="fa fa-check text-primary me-3"></i>Swimming at Hot Springs</p>
-                        <div class="col-12">
-                            <button class="btn btn-primary w-50 py-3 btn-sm " type="button" id="submitButton" name="btn" data-bs-toggle="modal" data-package-id="1" data-bs-target="#packageModal">Read More
+                        <div class="col-12 align">
+                            <button class="btn btn-outline-light px-4 mt-3 align" type="button" name="btn" data-bs-toggle="modal" data-package-id="2" data-bs-target="#packageModal">Read More
                             </button>
                         </div>
                     </div>
@@ -155,62 +155,165 @@
                 <!-- Package Modal Start -->
                 <div class="modal fade" id="packageModal" tabindex="-1" aria-labelledby="packageModalLabel" aria-hidden="true">
                     <div class="modal-dialog modal-lg">
-                        <div class="modal-content">
+                        <div class="modal-content align-items-center membership-item">
 
                             <div class="modal-header">
-                                <h3 class="modal-title" id="packageModalLabel">Package Details</h3>
+                                <h3 class="display-1" >Package Details</h3>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
                                 <!-- Button-based Nav tabs -->
                                 <div class="btn-group  d-flex justify-content-center align-items-center " role="group" aria-label="Package Tabs">
-                                    <button type="button" class="btn btn-outline-primary active" id="overview-tab" data-bs-toggle="tab" data-bs-target="#overview" role="tab" aria-controls="overview" aria-selected="true">Overview</button>
-                                    <button type="button" class="btn btn-outline-primary" id="dayByDay-tab" data-bs-toggle="tab" data-bs-target="#dayByDay" role="tab" aria-controls="dayByDay" aria-selected="false">Day by Day</button>
-                                    <button type="button" class="btn btn-outline-primary" id="rates-tab" data-bs-toggle="tab" data-bs-target="#rates" role="tab" aria-controls="rates" aria-selected="false">Rates</button>
-                                    <button type="button" class="btn btn-outline-primary" id="inclusions-tab" data-bs-toggle="tab" data-bs-target="#inclusions" role="tab" aria-controls="inclusions" aria-selected="false">Inclusions</button>
-                                    <button type="button" class="btn btn-outline-primary" id="transportation-tab" data-bs-toggle="tab" data-bs-target="#transportation" role="tab" aria-controls="transportation" aria-selected="false">Transportation</button>
+                                    <button type="button" class="btn btn-outline-light active" id="overview-tab" data-bs-toggle="tab" data-bs-target="#overview" role="tab" aria-controls="overview" aria-selected="true">Overview</button>
+                                    <button type="button" class="btn btn-outline-light" id="dayByDay-tab" data-bs-toggle="tab" data-bs-target="#dayByDay" role="tab" aria-controls="dayByDay" aria-selected="false">Day by Day</button>
+                                    <button type="button" class="btn btn-outline-light" id="rates-tab" data-bs-toggle="tab" data-bs-target="#rates" role="tab" aria-controls="rates" aria-selected="false">Rates</button>
+                                    <button type="button" class="btn btn-outline-light" id="inclusions-tab" data-bs-toggle="tab" data-bs-target="#inclusions" role="tab" aria-controls="inclusions" aria-selected="false">Inclusions</button>
+                                    <button type="button" class="btn btn-outline-light" id="transportation-tab" data-bs-toggle="tab" data-bs-target="#transportation" role="tab" aria-controls="transportation" aria-selected="false">Transportation</button>
                                 </div>
 
                                 <!-- Tab panes -->
                                 <div class="tab-content" id="packageTabsContent">
-                                    <div class="tab-pane fade show active" id="overview" role="tabpanel" aria-labelledby="overview-tab">
-                                        <h4>Overview</h4>
-                                        <p>Overview content goes here.</p>
+                                    <div class="tab-pane fade show active align-items-center" id="overview" role="tabpanel" aria-labelledby="overview-tab">
+                                                <p>Embark on an extraordinary 8-day journey with our Simba Pride Adventure package. This immersive safari experience offers a unique opportunity to witness the diverse wildlife and breathtaking landscapes of Kenya. Starting with a warm welcome at the airport, you'll be guided through the iconic Maasai Mara National Reserve for three exhilarating days. From the sweeping savannahs to the rugged terrain, every moment is a chance to witness the untamed beauty of nature.</p>
+
+                                                <p>Next, we venture to the Amboseli National Park for two days, known for its majestic views of Mount Kilimanjaro and its vast elephant herds. Then, a day at the stunning Lake Nakuru National Park awaits, where a boat ride and encounters with vibrant flamingos are just a few highlights. Finally, Nairobi National Park provides a perfect conclusion to your adventure, offering a diverse array of wildlife within the city's backdrop.</p>
+
+                                                <p>Our expert guides, including Maasai warriors, will lead you through each destination, providing in-depth knowledge and ensuring your safety. To make your experience truly tailor-made, choose from optional activities like a hot air balloon safari over Maasai Mara at sunrise and a guided tour by Maasai warriors. Additionally, enjoy recreational activities such as a boat ride on Lake Nakuru and a refreshing swim at the hot springs.</p>
+
+                                                <p>With comfortable accommodations, delicious meals, and seamless transportation, this package offers an unforgettable adventure for nature enthusiasts, wildlife lovers, and anyone seeking a true taste of Africa's untamed beauty.</p>
                                     </div>
                                     <div class="tab-pane fade" id="dayByDay" role="tabpanel" aria-labelledby="dayByDay-tab">
-                                        <h4>Day by Day</h4>
-                                        <p>Day by day content goes here.</p>
+
+                                        <div class="timeline">
+                                            <div class="timeline-item">
+                                                <div class="timeline-date">Day 1</div>
+                                                <div class="timeline-content">
+                                                    <h5 class="text-primary mb-3">Arrival in Maasai Mara</h5>
+                                                    <p>Your adventure begins as you arrive at the airport in Nairobi. Our friendly team will be there to greet you and provide a comfortable transfer to Maasai Mara. After settling into your accommodation, embark on an evening game drive to witness the mesmerizing wildlife as the sun sets over the savannah.</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="timeline-item">
+                                                <div class="timeline-date justify-content-center">Days 2-4</div>
+                                                <div class="timeline-content">
+                                                    <h5 class="text-primary mb-3">Exploring Maasai Mara</h5>
+                                                    <p>Over the next three days, immerse yourself in the wonders of Maasai Mara. Guided by our expert Maasai warriors, venture deep into the reserve for thrilling game drives. Marvel at the Big Five and the diverse array of wildlife, including wildebeest, zebras, and cheetahs. Experience the magic of the Maasai culture with cultural visits and interactions.</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="timeline-item">
+                                                <div class="timeline-date">Days 5-6</div>
+                                                <div class="timeline-content">
+                                                    <h5 class="text-primary mb-3">Amboseli National Park</h5>
+                                                    <p>Depart for Amboseli National Park, known for its stunning views of Mount Kilimanjaro. Spend two days exploring the park's diverse ecosystems, from vast grasslands to swamps. Observe large herds of elephants against the backdrop of the majestic mountain. Enjoy game drives and birdwatching opportunities.</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="timeline-item">
+                                                <div class="timeline-date">Day 7</div>
+                                                <div class="timeline-content">
+                                                    <h5 class="text-primary mb-3">Lake Nakuru Adventure</h5>
+                                                    <p>Embark on an adventure at Lake Nakuru National Park. Enjoy a scenic boat ride on the lake, where you'll have the chance to spot flamingos and other aquatic wildlife. Explore the park's unique landscapes and diverse birdlife. In the evening, relax and reflect on your incredible journey.</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="timeline-item">
+                                                <div class="timeline-date">Day 8</div>
+                                                <div class="timeline-content">
+                                                    <h5 class="text-primary mb-3">Nairobi National Park</h5>
+                                                    <p>Conclude your adventure with a visit to Nairobi National Park, a unique wildlife reserve within the city limits. Experience a final game drive, capturing memorable moments with the city skyline as a backdrop. Bid farewell to the wilderness before a convenient drop-off at the airport for your departure.</p>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
+
                                     <div class="tab-pane fade" id="rates" role="tabpanel" aria-labelledby="rates-tab">
-                                        <h4>Rates</h4>
-                                        <p>Rates content goes here.</p>
-                                        <table id="ratesTable">
-                                            <thead>
-                                                <tr>
-                                                    <th>Date</th>
-                                                    <th>Solo Price</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>2023-11-01</td>
-                                                    <td>100</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>2023-11-02</td>
-                                                    <td>120</td>
-                                                </tr>
-                                                <!-- Add more rows as needed -->
-                                            </tbody>
-                                        </table>
+                                        <div class="table-responsive">
+                                            <table class="table table-bordered">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Date Range</th>
+                                                        <th>Solo Price (1 person)</th>
+                                                        <th>Double Price (2 persons)</th>
+                                                        <th>Group Price (3+ persons)</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>2023-11-01 to 2023-11-05</td>
+                                                        <td>$1000</td>
+                                                        <td>$1800</td>
+                                                        <td>$2500</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2023-11-06 to 2023-11-10</td>
+                                                        <td>$1200</td>
+                                                        <td>$2000</td>
+                                                        <td>$2800</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2023-11-11 to 2023-11-15</td>
+                                                        <td>$1100</td>
+                                                        <td>$1900</td>
+                                                        <td>$2600</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2023-11-16 to 2023-11-20</td>
+                                                        <td>$1300</td>
+                                                        <td>$2100</td>
+                                                        <td>$2900</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2023-11-21 to 2023-11-25</td>
+                                                        <td>$1400</td>
+                                                        <td>$2200</td>
+                                                        <td>$3000</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2023-11-26 to 2023-11-30</td>
+                                                        <td>$1200</td>
+                                                        <td>$2000</td>
+                                                        <td>$2800</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2023-12-01 to 2023-12-05</td>
+                                                        <td>$1100</td>
+                                                        <td>$1900</td>
+                                                        <td>$2600</td>
+                                                    </tr>
+                                                    <!-- Add more rows as needed -->
+                                                </tbody>
+                                            </table>
+                                        </div>
                                     </div>
+
                                     <div class="tab-pane fade" id="inclusions" role="tabpanel" aria-labelledby="inclusions-tab">
-                                        <h4>Inclusions</h4>
-                                        <p>Inclusions content goes here.</p>
+                                        
+                                        <p>Experience the best of Ndovu Expedition with our comprehensive package that covers a range of exciting activities and amenities:</p>
+
+                                        <ul>
+                                            <p><i class="fa fa-check text-primary me-3"></i>Accommodation in premium lodges and camps throughout the journey.<p>
+                                            <p><i class="fa fa-check text-primary me-3"></i>Expert guide services for the entire duration of the tour.</p>
+                                            <p><i class="fa fa-check text-primary me-3"></i>Transportation in comfortable, air-conditioned vehicles.</p>
+                                            <p><i class="fa fa-check text-primary me-3"></i>Meals provided, including breakfast, lunch, and dinner.</p>
+                                            <p><i class="fa fa-check text-primary me-3"></i>Game drives in Samburu National Reserve for spectacular wildlife viewing.</p>
+                                            <p><i class="fa fa-check text-primary me-3"></i>Guided forest walk in Aberdare National Park, offering a unique perspective of the local flora and fauna.</p>
+                                            <p><i class="fa fa-check text-primary me-3"></i>Visit to Sweetwaters Chimpanzee Sanctuary for a chance to observe and learn about these incredible primates.</p>
+                                            <p><i class="fa fa-check text-primary me-3"></i>Boat ride on Lake Nakuru, providing a different angle for birdwatching and animal observation.</p>
+                                            <p><i class="fa fa-check text-primary me-3"></i>Equator Crossing StopOver for a memorable photo opportunity.</p>
+                                            <p><i class="fa fa-check text-primary me-3"></i>Entrance fees to all parks and reserves included in the itinerary.</p>
+                                            <p><i class="fa fa-check text-primary me-3"></i>Bottled water provided during all activities for your convenience.</p>
+                                        </ul>
+
+                                        <p>With our carefully curated inclusions, you can focus on enjoying the beauty of Ndovu Expedition without any worries about logistics or arrangements.</p>
                                     </div>
+
                                     <div class="tab-pane fade" id="transportation" role="tabpanel" aria-labelledby="transportation-tab">
-                                        <h4>Transportation</h4>
-                                        <p>Transportation content goes here.</p>
+                                        <p><i class="fa fa-plane text-primary me-3"></i>International Flight to Nairobi</p>
+                                        <p><i class="fa fa-bus text-primary me-3"></i>Comfortable Tourist Bus</p>
+                                        <p><i class="fa fa-car text-primary me-3"></i>Private Safari Vehicle</p>
+                                        <p><i class="fa fa-hotel text-primary me-3"></i>Accommodation Transfers</p>
+                                        <p><i class="fa fa-ship text-primary me-3"></i>Boat Ride on Lake Nakuru</p>
                                     </div>
 
                                     <div class="mb-3">
@@ -254,9 +357,104 @@
                         <h4 class="text-primary mb-3">Recreational Activity:</h4>
                         <p><i class="fa fa-check text-primary me-3"></i>Boat Ride on Lake Nakuru</p>
                         <p><i class="fa fa-check text-primary me-3"></i>Equator Crossing StopOver</p>
-                        <a class="btn btn-outline-light px-4 mt-3" href="">Get Started</a>
+                        <div class="col-12 align">
+                            <button class="btn btn-outline-light px-4 mt-3 align" type="button" name="btn" data-bs-toggle="modal" data-package-id="2" data-bs-target="#packageModal">Read More
+                            </button>
+                        </div>
                     </div>
                 </div>
+
+                <!-- Package Modal Start -->
+                <div class="modal fade" id="packageModal" tabindex="-1" aria-labelledby="packageModalLabel" aria-hidden="true" data-package-id="2">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+
+                            <div class="modal-header">
+                                <h3 class="modal-title" id="packageModalLabel">Package Details</h3>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <!-- Button-based Nav tabs -->
+                                <div class="btn-group  d-flex justify-content-center align-items-center " role="group" aria-label="Package Tabs">
+                                    <button type="button" class="btn btn-outline-primary active" id="overview-tab" data-bs-toggle="tab" data-bs-target="#overview" role="tab" aria-controls="overview" aria-selected="true">Overview</button>
+                                    <button type="button" class="btn btn-outline-primary" id="dayByDay-tab" data-bs-toggle="tab" data-bs-target="#dayByDay" role="tab" aria-controls="dayByDay" aria-selected="false">Day by Day</button>
+                                    <button type="button" class="btn btn-outline-primary" id="rates-tab" data-bs-toggle="tab" data-bs-target="#rates" role="tab" aria-controls="rates" aria-selected="false">Rates</button>
+                                    <button type="button" class="btn btn-outline-primary" id="inclusions-tab" data-bs-toggle="tab" data-bs-target="#inclusions" role="tab" aria-controls="inclusions" aria-selected="false">Inclusions</button>
+                                    <button type="button" class="btn btn-outline-primary" id="transportation-tab" data-bs-toggle="tab" data-bs-target="#transportation" role="tab" aria-controls="transportation" aria-selected="false">Transportation</button>
+                                </div>
+
+                                <!-- Tab panes -->
+                                <div class="tab-content" id="packageTabsContent">
+                                    <div class="tab-pane fade show active" id="overview" role="tabpanel" aria-labelledby="overview-tab">
+                                        <h4>Overview</h4>
+                                        <h4>Overview</h4>
+                                        <p>Embark on an extraordinary 8-day journey with our Simba Pride Adventure package. This immersive safari experience offers a unique opportunity to witness the diverse wildlife and breathtaking landscapes of Kenya. Starting with a warm welcome at the airport, you'll be guided through the iconic Maasai Mara National Reserve for three exhilarating days. From the sweeping savannahs to the rugged terrain, every moment is a chance to witness the untamed beauty of nature.</p>
+
+                                        <p>Next, we venture to the Amboseli National Park for two days, known for its majestic views of Mount Kilimanjaro and its vast elephant herds. Then, a day at the stunning Lake Nakuru National Park awaits, where a boat ride and encounters with vibrant flamingos are just a few highlights. Finally, Nairobi National Park provides a perfect conclusion to your adventure, offering a diverse array of wildlife within the city's backdrop.</p>
+
+                                        <p>Our expert guides, including Maasai warriors, will lead you through each destination, providing in-depth knowledge and ensuring your safety. To make your experience truly tailor-made, choose from optional activities like a hot air balloon safari over Maasai Mara at sunrise and a guided tour by Maasai warriors. Additionally, enjoy recreational activities such as a boat ride on Lake Nakuru and a refreshing swim at the hot springs.</p>
+
+                                        <p>With comfortable accommodations, delicious meals, and seamless transportation, this package offers an unforgettable adventure for nature enthusiasts, wildlife lovers, and anyone seeking a true taste of Africa's untamed beauty.</p>
+                                    </div>
+                                    <div class="tab-pane fade" id="dayByDay" role="tabpanel" aria-labelledby="dayByDay-tab">
+                                        <h4>Day by Day</h4>
+                                        <p>Day by day content goes here.</p>
+                                    </div>
+                                    <div class="tab-pane fade" id="rates" role="tabpanel" aria-labelledby="rates-tab">
+                                        <h4>Rates</h4>
+                                        <p>Rates content goes here.</p>
+                                        <table id="ratesTable">
+                                            <thead>
+                                                <tr>
+                                                    <th>Date</th>
+                                                    <th>Solo Price</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>2023-11-01</td>
+                                                    <td>1000</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2023-11-02</td>
+                                                    <td>3000</td>
+                                                </tr>
+                                                <!-- Add more rows as needed -->
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="tab-pane fade" id="inclusions" role="tabpanel" aria-labelledby="inclusions-tab">
+                                        <h4>Inclusions</h4>
+                                        <p>Inclusions content goes here.</p>
+                                    </div>
+                                    <div class="tab-pane fade" id="transportation" role="tabpanel" aria-labelledby="transportation-tab">
+                                        <h4>Transportation</h4>
+                                        <p>Transportation content goes here.</p>
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label for="numOfPeople" class="form-label">Number of People</label>
+                                        <input type="number" class="form-control" id="numOfPeople" min="1" value="1">
+                                    </div>
+
+                                    <!-- Date Picker -->
+                                    <div class="mb-3">
+                                        <label for="datePicker" class="form-label">Select Date</label>
+                                        <input type="date" class="form-control" id="datePicker">
+                                    </div>
+
+                                    <!-- Price Calculation -->
+                                    <div class="mb-3">
+                                        <label for="totalPrice" class="form-label">Total Price</label>
+                                        <span id="totalPrice">$ 500</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Package Modal End -->
+
                 <div class="col-lg-4 col-md-6 wow fadeInRight" data-wow-delay="0.5s">
                     <div class="membership-item position-relative">
                         <img class="img-fluid" src="img/Rhino.jpeg" alt="">
@@ -276,7 +474,10 @@
                         <h4 class="text-primary mb-3">Recreational Activity:</h4>
                         <p><i class="fa fa-check text-primary me-3"></i>Sunset Viewing</p>
                         <p><i class="fa fa-check text-primary me-3"></i>Mzima Springs StopOver</p>
-                        <a class="btn btn-outline-light px-4 mt-3" href="">Get Started</a>
+                        <div class="col-12 align">
+                            <button class="btn btn-outline-light px-4 mt-3 align" type="button" name="btn" data-bs-toggle="modal" data-package-id="2" data-bs-target="#packageModal">Read More
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -301,7 +502,10 @@
                         <h4 class="text-primary mb-3">Recreational Activity:</h4>
                         <p><i class="fa fa-check text-primary me-3"></i>Boat Ride on Lake Nakuru</p>
                         <p><i class="fa fa-check text-primary me-3"></i>Swimming at Hot Springs</p>
-                        <a class="btn btn-outline-light px-4 mt-3" href="">Get Started</a>
+                        <div class="col-12 align">
+                            <button class="btn btn-outline-light px-4 mt-3 align" type="button" name="btn" data-bs-toggle="modal" data-package-id="2" data-bs-target="#packageModal">Read More
+                            </button>
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInLeft" data-wow-delay="0.3s">
@@ -323,7 +527,10 @@
                         <h4 class="text-primary mb-3">Recreational Activity:</h4>
                         <p><i class="fa fa-check text-primary me-3"></i>Savannah Sunset Viewing and Dinner</p>
                         <p><i class="fa fa-check text-primary me-3"></i>Adventure Hiking</p>
-                        <a class="btn btn-outline-light px-4 mt-3" href="">Get Started</a>
+                        <div class="col-12 align">
+                            <button class="btn btn-outline-light px-4 mt-3 align" type="button" name="btn" data-bs-toggle="modal" data-package-id="2" data-bs-target="#packageModal">Read More
+                            </button>
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInLeft" data-wow-delay="0.1s">
@@ -345,7 +552,10 @@
                         <h4 class="text-primary mb-3">Recreational Activity:</h4>
                         <p><i class="fa fa-check text-primary me-3"></i>Guided Night Game Drive in Tarangire</p>
                         <p><i class="fa fa-check text-primary me-3"></i>Bird Viewing</p>
-                        <a class="btn btn-outline-light px-4 mt-3" href="">Get Started</a>
+                        <div class="col-12 align">
+                            <button class="btn btn-outline-light px-4 mt-3 align" type="button" name="btn" data-bs-toggle="modal" data-package-id="2" data-bs-target="#packageModal">Read More
+                            </button>
+                        </div>
                     </div>
                 </div>
                 <br>
@@ -368,7 +578,10 @@
                         <h4 class="text-primary mb-3">Recreational Activity:</h4>
                         <p><i class="fa fa-check text-primary me-3"></i>Guided Bicycle Tour in Hells Gate</p>
                         <p><i class="fa fa-check text-primary me-3"></i>Geo Thermal SPA Swimming </p>
-                        <a class="btn btn-outline-light px-4 mt-3" href="">Get Started</a>
+                        <div class="col-12 align">
+                            <button class="btn btn-outline-light px-4 mt-3 align" type="button" name="btn" data-bs-toggle="modal" data-package-id="2" data-bs-target="#packageModal">Read More
+                            </button>
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInRight" data-wow-delay="0.3s">
@@ -389,7 +602,10 @@
                         <h4 class="text-primary mb-3">Recreational Activity:</h4>
                         <p><i class="fa fa-check text-primary me-3"></i>Boat Safari on Lake Victoria</p>
                         <p><i class="fa fa-check text-primary me-3"></i>Fish Eating</p>
-                        <a class="btn btn-outline-light px-4 mt-3" href="">Get Started</a>
+                        <div class="col-12 align">
+                            <button class="btn btn-outline-light px-4 mt-3 align" type="button" name="btn" data-bs-toggle="modal" data-package-id="2" data-bs-target="#packageModal">Read More
+                            </button>
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInRight" data-wow-delay="0.5s">
@@ -411,7 +627,10 @@
                         <h4 class="text-primary mb-3">Recreational Activity:</h4>
                         <p><i class="fa fa-check text-primary me-3"></i>Chimpanzee Trek in Kibale National Park</p>
                         <p><i class="fa fa-check text-primary me-3"></i>Mount Kilimanjaro Sunrise viewing</p>
-                        <a class="btn btn-outline-light px-4 mt-3" href="">Get Started</a>
+                        <div class="col-12 align">
+                            <button class="btn btn-outline-light px-4 mt-3 align" type="button" name="btn" data-bs-toggle="modal" data-package-id="2" data-bs-target="#packageModal">Read More
+                            </button>
+                        </div>
                     </div>
                 </div>
                 <br>
@@ -432,7 +651,10 @@
                         <h4 class="text-primary mb-3">Recreational Activity:</h4>
                         <p><i class="fa fa-check text-primary me-3"></i>Witness the Great Wildebeest Migration</p>
                         <p><i class="fa fa-check text-primary me-3"></i>Maasai Moran Dances</p>
-                        <a class="btn btn-outline-light px-4 mt-3" href="">Get Started</a>
+                        <div class="col-12 align">
+                            <button class="btn btn-outline-light px-4 mt-3 align" type="button" name="btn" data-bs-toggle="modal" data-package-id="2" data-bs-target="#packageModal">Read More
+                            </button>
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInLeft" data-wow-delay="0.3s">
@@ -453,7 +675,10 @@
                         <h4 class="text-primary mb-3">Recreational Activity:</h4>
                         <p><i class="fa fa-check text-primary me-3"></i>Coastal Cuisines Experiences </p>
                         <p><i class="fa fa-check text-primary me-3"></i>Beach Swimming</p>
-                        <a class="btn btn-outline-light px-4 mt-3" href="">Get Started</a>
+                        <div class="col-12 align">
+                            <button class="btn btn-outline-light px-4 mt-3 align" type="button" name="btn" data-bs-toggle="modal" data-package-id="2" data-bs-target="#packageModal">Read More
+                            </button>
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInLeft" data-wow-delay="0.1s">
@@ -474,7 +699,10 @@
                         <h4 class="text-primary mb-3">Recreational Activity:</h4>
                         <p><i class="fa fa-check text-primary me-3"></i>Guided Forest Walk in Aberdare</p>
                         <p><i class="fa fa-check text-primary me-3"></i>Waterfall Swimming</p>
-                        <a class="btn btn-outline-light px-4 mt-3" href="">Get Started</a>
+                        <div class="col-12 align">
+                            <button class="btn btn-outline-light px-4 mt-3 align" type="button" name="btn" data-bs-toggle="modal" data-package-id="2" data-bs-target="#packageModal">Read More
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -606,7 +834,7 @@
     </script>
 
     <!-- JavaScript Code -->
-    <script>
+    <!-- <script>
         document.addEventListener('DOMContentLoaded', function() {
             const numOfPeopleInput = document.getElementById('numOfPeople');
             const datePicker = document.getElementById('datePicker');
@@ -645,7 +873,126 @@
             numOfPeopleInput.addEventListener('input', calculatePrice);
             datePicker.addEventListener('input', calculatePrice);
         });
-    </script>
+    </script> -->
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const numOfPeopleInput = document.getElementById('numOfPeople');
+        const datePicker = document.getElementById('datePicker');
+        const totalPriceDisplay = document.getElementById('totalPrice');
+
+        function calculatePrice(packageId) {
+            const numOfPeople = parseInt(numOfPeopleInput.value);
+            const selectedDate = datePicker.value;
+            let basePrice = 0;
+
+            // Get the solo price from the rates table based on the selected date
+            const ratesTable = document.getElementById('ratesTable');
+            const rows = ratesTable.getElementsByTagName('tr');
+
+            for (let i = 1; i < rows.length; i++) {
+                const cells = rows[i].getElementsByTagName('td');
+                if (cells[0].textContent === selectedDate) {
+                    basePrice = parseInt(cells[1].textContent);
+                    break;
+                }
+            }
+
+            // Additional logic for pricing calculation based on the number of people and date
+            let totalPrice = basePrice * numOfPeople;
+
+            // Apply discount if more than 1 person
+            if (numOfPeople > 1) {
+                const discountPercentage = 5;
+                const discountAmount = (totalPrice * discountPercentage) / 100;
+                totalPrice -= discountAmount;
+            }
+
+            totalPriceDisplay.textContent = `$${totalPrice}`;
+        }
+
+        numOfPeopleInput.addEventListener('input', function() {
+            calculatePrice();
+        });
+
+        datePicker.addEventListener('input', function() {
+            calculatePrice();
+        });
+
+        document.querySelectorAll('.btn-view-package').forEach(function(button) {
+            button.addEventListener('click', function() {
+                const packageId = this.getAttribute('data-package-id');
+                if (packageId === '1') {
+                    // Assuming Package 1 has a base price of $150 and a discount of 8%
+                    calculatePrice(packageId);
+                } else if (packageId === '2') {
+                    // Assuming Package 2 has a base price of $200 and a discount of 10%
+                    calculatePrice(packageId);
+                }
+            });
+        });
+    });
+</script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const numOfPeopleInput = document.getElementById('numOfPeople');
+        const datePicker = document.getElementById('datePicker');
+        const totalPriceDisplay = document.getElementById('totalPrice');
+
+    function calculatePrice(packageId) {
+        const numOfPeople = parseInt(numOfPeopleInput.value);
+        const selectedDate = datePicker.value;
+        let basePrice = 0;
+
+        // Get the solo price from the rates table based on the selected date
+        const ratesTable = document.getElementById('ratesTable');
+        const rows = ratesTable.getElementsByTagName('tr');
+
+        for (let i = 1; i < rows.length; i++) {
+            const cells = rows[i].getElementsByTagName('td');
+            if (cells[0].textContent === selectedDate) {
+                basePrice = parseInt(cells[1].textContent);
+                break;
+            }
+        }
+
+        // Additional logic for pricing calculation based on the number of people and date
+        let totalPrice = basePrice * numOfPeople;
+
+        // Apply discount if more than 1 person
+        if (numOfPeople > 1) {
+            const discountPercentage = 5;
+            const discountAmount = (totalPrice * discountPercentage) / 100;
+            totalPrice -= discountAmount;
+        }
+
+        totalPriceDisplay.textContent = `$${totalPrice}`;
+    }
+
+    numOfPeopleInput.addEventListener('input', function() {
+        calculatePrice();
+    });
+
+    datePicker.addEventListener('input', function() {
+        calculatePrice();
+    });
+
+    document.querySelectorAll('.btn-view-package').forEach(function(button) {
+        button.addEventListener('click', function() {
+            const packageId = this.getAttribute('data-package-id');
+            if (packageId === '1') {
+                // Assuming Package 1 has a base price of $150 and a discount of 8%
+                calculatePrice(packageId);
+            } else if (packageId === '2') {
+                // Assuming Package 2 has a base price of $200 and a discount of 10%
+                calculatePrice(packageId);
+            }
+        });
+    });
+});
+
+
 
 
 
