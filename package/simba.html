@@ -84,12 +84,12 @@
         </button>
         <div class="collapse navbar-collapse py-4 py-lg-0" id="navbarCollapse">
             <div class="navbar-nav ms-auto">
-                <a href="index.html" class="nav-item nav-link active">Home</a>
-                <a href="about.html" class="nav-item nav-link">About</a>
-                <a href="service.html" class="nav-item nav-link">Services</a>
-                <a href="package.html" class="nav-item nav-link">Packages</a>
-                <a href="gallery.html" class="nav-item nav-link">Gallery</a>
-                <a href="contact.html" class="nav-item nav-link">Contact</a>
+                <a href="../index.html" class="nav-item nav-link">Home</a>
+                <a href="../about.html" class="nav-item nav-link">About</a>
+                <a href="../service.html" class="nav-item nav-link">Services</a>
+                <a href="../package.html" class="nav-item nav-link active">Packages</a>
+                <a href="../gallery.html" class="nav-item nav-link">Gallery</a>
+                <a href="../contact.html" class="nav-item nav-link">Contact</a>
             </div>
             <!-- <a href="" class="btn btn-primary">Buy Ticket<i class="fa fa-arrow-right ms-3"></i></a> -->
         </div>
@@ -273,21 +273,25 @@
                     </div>
                 </div>
                 <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="img-border flex text-center">
+                    <div class="flex text-center border border-4 border-primary p-3 rounded">
+                        <!-- First Label with Heading -->
                         <div class="mb-3">
-                            <label for="numOfPeople" class="form-label">Number of People</label>
-                            <input type="number" class="form-control text-center" id="numOfPeople" min="1" value="1">
+                            <h4>Number of People</h4>
+                            <label for="numOfPeople" class="form-label visually-hidden">Number of People</label>
+                            <input type="number" class="form-control text-center rounded-pill" id="numOfPeople" min="1" value="1">
                         </div>
 
-                        <!-- Date Picker -->
+                        <!-- Second Label with Heading -->
                         <div class="mb-3">
-                            <label for="datePicker" class="form-label">Select Date</label>
-                            <input type="date" class="form-control text-center" id="datePicker">
+                            <h4>Select Date</h4>
+                            <label for="datePicker" class="form-label visually-hidden">Select Date</label>
+                            <input type="date" class="form-control text-center rounded-pill" id="datePicker">
                         </div>
 
-                        <!-- Price Calculation -->
-                        <div class="mb-3">
-                            <label for="totalPrice" class="form-label">Total Price</label>
+                        <!-- Third Label with Custom Style -->
+                        <div class="mb-3 border border-2 border-success p-2 btn-brown rounded-pill">
+                            <h4>Total Price</h4>
+                            <label for="totalPrice" class="form-label visually-hidden">Total Price</label>
                             <span id="totalPrice">$ 500</span>
                         </div>
                     </div>
@@ -395,7 +399,7 @@
 
 
     <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top rounded-pill"><i class="bi bi-arrow-up"></i></a>
 
 
     <!-- JavaScript Libraries -->
