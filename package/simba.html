@@ -65,12 +65,12 @@
                     <small>+44 208 175 4845</small>
                 </div>
                 <div class="h-100 d-inline-flex align-items-center">
-                    <a class="btn btn-sm-square bg-white text-primary me-1" href=""><i
+                    <a class="btn btn-sm-square bg-white text-primary me-1 rounded-pill" href=""><i
                             class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-sm-square bg-white text-primary me-1" href=""><i class="fab fa-twitter"></i></a>
-                    <a class="btn btn-sm-square bg-white text-primary me-1" href=""><i
+                    <a class="btn btn-sm-square bg-white text-primary me-1 rounded-pill" href=""><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-sm-square bg-white text-primary me-1 rounded-pill" href=""><i
                             class="fab fa-linkedin-in"></i></a>
-                    <a class="btn btn-sm-square bg-white text-primary me-0" href=""><i class="fab fa-instagram"></i></a>
+                    <a class="btn btn-sm-square bg-white text-primary me-0 rounded-pill" href=""><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
         </div>
@@ -136,10 +136,10 @@
                             <button type="button" class="btn btn-outline-secondary rounded-pill" id="rates-tab"
                                 data-bs-toggle="tab" data-bs-target="#rates" role="tab" aria-controls="rates"
                                 aria-selected="false">Rates</button>
-                            <button type="button" class="btn btn-outline-secondary rounded-pill" id="inclusions-tab"
+                            <button type="button" class="btn btn-outline-danger rounded-pill" id="inclusions-tab"
                                 data-bs-toggle="tab" data-bs-target="#inclusions" role="tab" aria-controls="inclusions"
                                 aria-selected="false">Inclusions</button>
-                            <button type="button" class="btn btn-outline-secondary rounded-pill" id="transportation-tab"
+                            <button type="button" class="btn text-warning btn-danger btn-outline-dark rounded-pill" id="transportation-tab"
                                 data-bs-toggle="tab" data-bs-target="#transportation" role="tab"
                                 aria-controls="transportation" aria-selected="false">Transport</button>
                         </div>
@@ -1092,8 +1092,8 @@
                     </div>
                 </div>
                 <div class="col-lg-3 wow fadeInUp" data-wow-delay="0.5s">
-                    <h3 class="mb-4 text-dark fw-bold mt-4">Get a Tailor-Made Quote</h3> <!-- Added heading here -->
-                    <div class="flex text-center border border-3 border-primary p-3 rounded">
+                    <h3 class="mb-4 text-dark fw-bold mt-4 text-center">"Get a Tailor-Made Quote"</h3> <!-- Added heading here -->
+                    <div class="flex text-center border border-3 border-primary p-3">
 
                         <!-- First Label with Heading -->
                         <div class="mb-3">
@@ -1110,10 +1110,23 @@
                         </div>
 
                         <!-- Third Label with Custom Style -->
-                        <div class=" mb-2 px-3 py-3 btn-dark rounded-pill">
-                            <h4 class="fw-bold mb-1 text-light">Total Price:</h4>
+<!--
+                        <div class="btn btn-warning mb-2 rounded-pill d-flex">
+                            <div class="col-lg-6">
+                                <h6 class="fw-bold mb-0 text-light">Total Price:</h6>
+                            </div>
+                            <div class="col-lg-6">
+                                <label for="totalPrice" class="form-label visually-hidden">Total Price</label>
+                                <h4><span id="totalPrice" class="text-danger fw-bold">$ 500</span></h4>
+                            </div>
+                            
+                        </div>
+-->
+                        
+                        <div class="position-relative mx-auto" style="max-width: 400px;">
+                            <h5 class="form-control border-0 w-100 py-3 ps-4 pe-5 rounded-pill" type="text">Total Price:</h5>
                             <label for="totalPrice" class="form-label visually-hidden">Total Price</label>
-                            <h3><span id="totalPrice" class="text-danger fw-bold">$ 500</span></h3>
+                            <h4> <span id="totalPrice" type="text" class="btn text-warning btn-dark py-2 position-absolute top-0 end-0 mt-2 me-2 rounded-pill">$ 0.00</span></h4>
                         </div>
 
                         <div class="col-lg-12 text">
@@ -1185,10 +1198,10 @@
                     <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@safaritoursguide.com</p>
                     <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@safaritoursguide.co.uk</p>
                     <div class="d-flex pt-2">
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-outline-light btn-social rounded-pill" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social rounded-pill" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social rounded-pill" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-outline-light btn-social rounded-pill" href=""><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
