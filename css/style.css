@@ -470,6 +470,19 @@
     padding-bottom: 20px !important;
 }
 
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
+/*
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+*/
 
 /*** Membership ***/
 
