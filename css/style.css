@@ -483,6 +483,58 @@
   color: white;
 }
 */
+/*.bar-chart {
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background-color: #333;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.bar {
+    position: absolute;
+    height: 100%;
+    animation: neon 1.5s infinite alternate;
+}
+
+@keyframes neon {
+    0% {
+        box-shadow: 0 0 10px #6fd089, 0 0 20px #6fd089, 0 0 30px #6fd089;
+    }
+    100% {
+        box-shadow: 0 0 10px #6fd089, 0 0 20px #6fd089, 0 0 40px #6fd089;
+    }
+}*/
+/*
+.progress {
+  height: 5px;
+}
+
+.progress .progress-bar {
+  width: 0px;
+  transition: 2s;
+}
+*/
+
+  .chart-container {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  .bar-chart {
+    display: flex;
+    margin-bottom: 10px;
+  }
+  .bar-label {
+    flex: 1;
+    font-weight: bold;
+  }
+  .bar-fill {
+    flex: 5;
+    height: 20px;
+    background-color: #ff0000;
+  }
+
 
 /*** Membership ***/
 

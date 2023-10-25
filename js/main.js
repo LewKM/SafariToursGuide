@@ -24,6 +24,14 @@
             $('.sticky-top').removeClass('shadow-sm').css('top', '-100px');
         }
     });
+
+    // Skills
+    $('.skill').waypoint(function () {
+        $('.progress .progress-bar').each(function () {
+            $(this).css("width", $(this).attr("aria-valuenow") + '%');
+        });
+    }, {offset: '80%'});
+
     
     
     // Back to top button
