@@ -212,7 +212,12 @@
 /*** Header ***/
 
 .header-bg {
-    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/gazelle.jpg) center center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/gamedrive.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.header-bg-chui {
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/leopard2.jpeg) center center no-repeat;
     background-size: cover;
 }
 
