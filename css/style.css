@@ -217,76 +217,76 @@
 }
 
 .header-bg-chui {
-    background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(../img/leopardbg.jpg) center center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/leopardbg.jpg) center center no-repeat;
     background-size: cover;
 }
 .header-bg-fisi {
-    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/leopard2.jpeg) center center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/hyenabg.jpg) center center no-repeat;
     background-size: cover;
 }
 .header-bg-kasuku {
-    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/leopard2.jpeg) center center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/parrotbg.jpg) center center no-repeat;
     background-size: cover;
 }
 .header-bg-kiboko {
-    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/leopard2.jpeg) center center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/hippobg.jpg) center center no-repeat;
     background-size: cover;
 }
 .header-bg-kifaru {
-    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/leopard2.jpeg) center center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/rhinobg.jpg) center center no-repeat;
     background-size: cover;
 }
 .header-bg-mamba {
-    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/leopard2.jpeg) center center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/mambabg.jpg) center center no-repeat;
     background-size: cover;
 }
 .header-bg-mwewe {
-    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/leopard2.jpeg) center center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/mwewebg.jpg) center center no-repeat;
     background-size: cover;
 }
 .header-bg-ndovu {
-    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/leopard2.jpeg) center center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/ndovubg.jpg) center center no-repeat;
     background-size: cover;
 }
 
 .header-bg-nyangumi {
-    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/leopard2.jpeg) center center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/whalebg2.jpg) center center no-repeat;
     background-size: cover;
 }
 .header-bg-nyati {
-    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/leopard2.jpeg) center center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/bufallobg.jpg) center center no-repeat;
     background-size: cover;
 }
 .header-bg-nyumbu {
-    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/leopard2.jpeg) center center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/nyumbubg.jpg) center center no-repeat;
     background-size: cover;
 }
 .header-bg-papa {
-    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/leopard2.jpeg) center center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/papabg.jpg) center center no-repeat;
     background-size: cover;
 }
 .header-bg-pundamilia {
-    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/leopard2.jpeg) center center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/zebrabg.jpg) center center no-repeat;
     background-size: cover;
 }
 .header-bg-simba {
-    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/leopard2.jpeg) center center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/lionbg.jpg) center center no-repeat;
     background-size: cover;
 }
 .header-bg-sokwe {
-    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/leopard2.jpeg) center center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/sokwebg.jpg) center center no-repeat;
     background-size: cover;
 }
 .header-bg-swara {
-    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/leopard2.jpeg) center center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/gazellebg.jpg) center center no-repeat;
     background-size: cover;
 }
 .header-bg-tausi {
-    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/leopard2.jpeg) center center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/tausibg.jpg) center center no-repeat;
     background-size: cover;
 }
 .header-bg-twiga {
-    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/leopard2.jpeg) center center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/twigabg.jpg) center center no-repeat;
     background-size: cover;
 }
 
