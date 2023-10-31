@@ -220,6 +220,75 @@
     background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/leopard2.jpeg) center center no-repeat;
     background-size: cover;
 }
+.header-bg-fisi {
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/leopard2.jpeg) center center no-repeat;
+    background-size: cover;
+}
+.header-bg-kasuku {
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/leopard2.jpeg) center center no-repeat;
+    background-size: cover;
+}
+.header-bg-kiboko {
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/leopard2.jpeg) center center no-repeat;
+    background-size: cover;
+}
+.header-bg-kifaru {
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/leopard2.jpeg) center center no-repeat;
+    background-size: cover;
+}
+.header-bg-mamba {
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/leopard2.jpeg) center center no-repeat;
+    background-size: cover;
+}
+.header-bg-mwewe {
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/leopard2.jpeg) center center no-repeat;
+    background-size: cover;
+}
+.header-bg-ndovu {
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/leopard2.jpeg) center center no-repeat;
+    background-size: cover;
+}
+
+.header-bg-nyangumi {
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/leopard2.jpeg) center center no-repeat;
+    background-size: cover;
+}
+.header-bg-nyati {
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/leopard2.jpeg) center center no-repeat;
+    background-size: cover;
+}
+.header-bg-nyumbu {
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/leopard2.jpeg) center center no-repeat;
+    background-size: cover;
+}
+.header-bg-papa {
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/leopard2.jpeg) center center no-repeat;
+    background-size: cover;
+}
+.header-bg-pundamilia {
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/leopard2.jpeg) center center no-repeat;
+    background-size: cover;
+}
+.header-bg-simba {
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/leopard2.jpeg) center center no-repeat;
+    background-size: cover;
+}
+.header-bg-sokwe {
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/leopard2.jpeg) center center no-repeat;
+    background-size: cover;
+}
+.header-bg-swara {
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/leopard2.jpeg) center center no-repeat;
+    background-size: cover;
+}
+.header-bg-tausi {
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/leopard2.jpeg) center center no-repeat;
+    background-size: cover;
+}
+.header-bg-twiga {
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/leopard2.jpeg) center center no-repeat;
+    background-size: cover;
+}
 
 .btn-play {
     position: relative;
