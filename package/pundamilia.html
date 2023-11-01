@@ -121,7 +121,7 @@
                         <!-- Button-based Nav tabs -->
                         <div class="btn-group gap-2 d-flex justify-content-center align-items-center" role="group" aria-label="Package Tabs">
                             <button type="button" class="btn text-warning btn-secondary btn-outline-dark active rounded-pill" id="overview-tab" data-bs-toggle="tab" data-bs-target="#overview" role="tab" aria-controls="overview" aria-selected="true">Overview</button>
-                            <button type="button" class="btn text-warning btn-secondary btn-outline-dark rounded-pill" id="dayByDay-tab" data-bs-toggle="tab" data-bs-target="#dayByDay" role="tab" aria-controls="dayByDay" aria-selected="false">DaybyDay</button>
+                            <button type="button" class="btn text-warning btn-secondary btn-outline-dark rounded-pill" id="dayByDay-tab" data-bs-toggle="tab" data-bs-target="#dayByDay" role="tab" aria-controls="dayByDay" aria-selected="false">Day by Day</button>
                             <button type="button" class="btn text-warning btn-secondary btn-outline-dark rounded-pill" id="rates-tab" data-bs-toggle="tab" data-bs-target="#rates" role="tab" aria-controls="rates" aria-selected="false">Rates</button>
                             <button type="button" class="btn text-warning btn-secondary btn-outline-dark rounded-pill" id="inclusions-tab" data-bs-toggle="tab" data-bs-target="#inclusions" role="tab" aria-controls="inclusions" aria-selected="false">Inclusions</button>
                             <button type="button" class="btn text-warning btn-secondary btn-outline-dark rounded-pill" id="transportation-tab" data-bs-toggle="tab" data-bs-target="#transportation" role="tab" aria-controls="transportation" aria-selected="false">Transport</button>
@@ -1680,9 +1680,9 @@ This will be your concluding day on safari. You will enjoy the morning Breakfast
                 <div class="col-lg-9 wow fadeInUp" data-wow-delay="0.1s">
                     <h1 class="display-5 text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">Check More Packages!</h1>
                     <div class="btn-group gap-4 d-flex justify-content-center align-items-center" role="group" aria-label="Package Tabs">
-                        <a href="pundamilia.html" class="btn btn-primary btn-outline-secondary rounded-pill bi bi-arrow-left"> Previous Package</a>
+                        <a href="papa.html" class="btn btn-primary btn-outline-secondary rounded-pill bi bi-arrow-left"> Previous Package</a>
                         <a href="../package.html" class="btn btn-primary btn-outline-secondary rounded-pill">Packages Home</a>
-                        <a href="sokwe.html" class="btn btn-primary btn-outline-secondary rounded-pill">Next Package <i class="bi bi-arrow-right"></i></a>
+                        <a href="simba.html" class="btn btn-primary btn-outline-secondary rounded-pill">Next Package <i class="bi bi-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
@@ -1870,10 +1870,22 @@ This will be your concluding day on safari. You will enjoy the morning Breakfast
                                 price = parseInt(row.children[1].textContent.slice(1));
                                 break;
                             case 2:
-                                price = parseInt(row.children[2].textContent.slice(1)) * 0.97; // Apply 3% discount
+                                price = parseInt(row.children[2].textContent.slice(1)); // Apply 3% discount
+                                break;
+                                case 3:
+                                price = parseInt(row.children[3].textContent.slice(1));
+                                break;
+                            case 4:
+                                price = parseInt(row.children[4].textContent.slice(1)); // Apply 3% discount
+                                break;
+                                case 5:
+                                price = parseInt(row.children[5].textContent.slice(1));
+                                break;
+                            case 6:
+                                price = parseInt(row.children[6].textContent.slice(1)); // Apply 3% discount
                                 break;
                             default:
-                                price = parseInt(row.children[3].textContent.slice(1)) * 0.95; // Apply 5% discount
+                                price = parseInt(row.children[6].textContent.slice(1)); // Apply 5% discount
                                 break;
                         }
                     }

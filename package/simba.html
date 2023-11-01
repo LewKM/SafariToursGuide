@@ -132,7 +132,7 @@
                                 aria-controls="overview" aria-selected="true">Overview</button>
                             <button type="button" class="btn text-warning btn-secondary btn-outline-dark rounded-pill" id="dayByDay-tab"
                                 data-bs-toggle="tab" data-bs-target="#dayByDay" role="tab" aria-controls="dayByDay"
-                                aria-selected="false">DaybyDay</button>
+                                aria-selected="false">Day by Day</button>
                             <button type="button" class="btn text-warning btn-secondary btn-outline-dark rounded-pill" id="rates-tab"
                                 data-bs-toggle="tab" data-bs-target="#rates" role="tab" aria-controls="rates"
                                 aria-selected="false">Rates</button>
@@ -1833,10 +1833,22 @@ You'll spend this last morning in the park admiring unspoiled Africa as you prep
                 price = parseInt(row.children[1].textContent.slice(1));
                 break;
               case 2:
-                price = parseInt(row.children[2].textContent.slice(1)) * 0.97; // Apply 3% discount
+                price = parseInt(row.children[2].textContent.slice(1)); // Apply 3% discount
+                break;
+                    case 3:
+                price = parseInt(row.children[3].textContent.slice(1));
+                break;
+              case 4:
+                price = parseInt(row.children[4].textContent.slice(1)); // Apply 3% discount
+                break;
+                    case 5:
+                price = parseInt(row.children[5].textContent.slice(1));
+                break;
+              case 6:
+                price = parseInt(row.children[6].textContent.slice(1)); // Apply 3% discount
                 break;
               default:
-                price = parseInt(row.children[3].textContent.slice(1)) * 0.95; // Apply 5% discount
+                price = parseInt(row.children[6].textContent.slice(1)); // Apply 5% discount
                 break;
             }
           }
