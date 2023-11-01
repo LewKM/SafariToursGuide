@@ -13,6 +13,7 @@
         width: 100%;
         margin-bottom: 1rem;
         color: #212529;
+        overflow-x: auto;
     }
 
     .table th,
@@ -20,6 +21,7 @@
         padding: 0.75rem;
         vertical-align: top;
         border-top: 1px solid #dee2e6;
+        min-width: 200px; 
     }
 
     .table thead th {
@@ -70,6 +72,16 @@
     .table-primary tbody + tbody {
         border-color: #7abaff;
     }
+
+@media (max-width: 600px) {
+
+    .table { 
+        width: 100% !important;
+        overflow-x: scroll; 
+    }
+
+    th, td {min-width: 200px; }
+}
 
 
 .back-to-top {
